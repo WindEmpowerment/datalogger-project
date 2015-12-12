@@ -1,0 +1,831 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Windlogger-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title "L'ensemble des connexions de la carte analogique du windlogger"
+Date "12 dec 2015"
+Rev ""
+Comp "Wind Empowerment"
+Comment1 "GIRAULT Etienne"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_3 K101
+U 1 1 5604FFDD
+P 2750 2200
+F 0 "K101" V 2700 2200 50  0000 C CNN
+F 1 "CONN_3" V 2800 2200 40  0000 C CNN
+F 2 "PINHEAD1-3_Windlogger" H 2750 2200 60  0001 C CNN
+F 3 "" H 2750 2200 60  0000 C CNN
+	1    2750 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P105
+U 1 1 5605010E
+P 2750 3050
+F 0 "P105" V 2700 3050 40  0000 C CNN
+F 1 "CONN_2" V 2800 3050 40  0000 C CNN
+F 2 "PINHEAD1-2_Windlogger" H 2750 3050 60  0001 C CNN
+F 3 "" H 2750 3050 60  0000 C CNN
+	1    2750 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_2 P106
+U 1 1 56050127
+P 2750 3450
+F 0 "P106" V 2700 3450 40  0000 C CNN
+F 1 "CONN_2" V 2800 3450 40  0000 C CNN
+F 2 "PINHEAD1-2_Windlogger" H 2750 3450 60  0001 C CNN
+F 3 "" H 2750 3450 60  0000 C CNN
+	1    2750 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_3 K102
+U 1 1 5605016D
+P 2750 5000
+F 0 "K102" V 2700 5000 50  0000 C CNN
+F 1 "CONN_3" V 2800 5000 40  0000 C CNN
+F 2 "PINHEAD1-3_Windlogger" H 2750 5000 60  0001 C CNN
+F 3 "" H 2750 5000 60  0000 C CNN
+	1    2750 5000
+	-1   0    0    -1  
+$EndComp
+Text Notes 850  950  0    60   ~ 0
+Anemometer1 : Hall effect or ILS
+Text Notes 1400 2250 0    60   ~ 0
+Winevane
+Text Notes 1300 3100 0    60   ~ 0
+9V transformer : AC voltage
+Text Notes 1600 3500 0    60   ~ 0
+Hall effect AC sensor
+Text Notes 550  4350 0    60   ~ 0
+DC voltage :\nup to 64V for battery system\nor up to 640V for DC bus on on grid system
+Text Notes 650  5050 0    60   ~ 0
+DC current sensor : ACS758
+Text Notes 2100 6300 0    60   ~ 0
+micro USB plug
+$Comp
+L AGND #PWR01
+U 1 1 5605104D
+P 3200 1050
+F 0 "#PWR01" H 3200 1050 40  0001 C CNN
+F 1 "AGND" H 3200 950 50  0000 C CNN
+F 2 "" H 3200 1050 60  0000 C CNN
+F 3 "" H 3200 1050 60  0000 C CNN
+	1    3200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR02
+U 1 1 56051134
+P 3200 5200
+F 0 "#PWR02" H 3200 5200 40  0001 C CNN
+F 1 "AGND" H 3200 5100 50  0000 C CNN
+F 2 "" H 3200 5200 60  0000 C CNN
+F 3 "" H 3200 5200 60  0000 C CNN
+	1    3200 5200
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 3900 600  1400 850 
+U 560A35D3
+F0 "F1 Anemometre" 50
+F1 "F1 Anemometre.sch" 50
+F2 "Wind1" I L 3900 800 60 
+F3 "Wind2" I L 3900 1250 60 
+F4 "Speed2" O R 5300 1250 60 
+F5 "Speed1" O R 5300 800 60 
+$EndSheet
+$Sheet
+S 3900 1750 1400 850 
+U 560A35DE
+F0 "F2 Girouette" 50
+F1 "F2 Girouette.sch" 50
+F2 "Udir" O R 5300 2200 60 
+F3 "vane_v+" I L 3900 1950 60 
+F4 "vane_sig" I L 3900 2400 60 
+F5 "vane_v-" I L 3900 2200 60 
+$EndSheet
+$Sheet
+S 3900 2800 1400 950 
+U 560A361A
+F0 "F3 Wattmetre_AC" 50
+F1 "F3 Wattmetre_ACsch.sch" 50
+F2 "Ugrid" O R 5300 3100 60 
+F3 "UAC_hi" I L 3900 2950 60 
+F4 "UAC_lo" I L 3900 3150 60 
+F5 "IAC_hi" I L 3900 3350 60 
+F6 "IAC_lo" I L 3900 3550 60 
+F7 "IAC" O R 5300 3500 60 
+$EndSheet
+$Sheet
+S 3900 4000 1400 750 
+U 560A3643
+F0 "F4 Wattmetre_DC" 50
+F1 "F4 Wattmetre_DC.sch" 50
+F2 "UDC_hi" I L 3900 4300 60 
+F3 "Ubat" O R 5300 4400 60 
+$EndSheet
+$Sheet
+S 3900 6400 1400 800 
+U 560A36AF
+F0 "F6 Alimentation" 50
+F1 "F6 Alimentation.sch" 50
+F2 "5V" I L 3900 6800 60 
+F3 "Power_fail" O R 5300 6950 60 
+$EndSheet
+$Sheet
+S 3900 5300 1400 800 
+U 560A36CB
+F0 "F5 Temperature" 50
+F1 "F5 Temperature.sch" 50
+F2 "Utemp" O R 5300 5700 60 
+F3 "temp_hi" I L 3900 5600 60 
+F4 "temp_lo" I L 3900 5800 60 
+$EndSheet
+Text Label 3300 800  0    60   ~ 0
+Wind1
+Text Label 3350 1250 0    60   ~ 0
+Wind2
+Text Label 3250 2300 0    60   ~ 0
+vane_sig
+Text Label 3350 2950 0    60   ~ 0
+UAC_hi
+Text Label 3350 3150 0    60   ~ 0
+UAC_lo
+Text Label 3350 3350 0    60   ~ 0
+IAC_hi
+Text Label 3350 3550 0    60   ~ 0
+IAC_lo
+Text Label 3200 4300 0    60   ~ 0
+UDC_hi
+Text Label 5450 5100 0    60   ~ 0
+IDC
+$Comp
+L +3.3V #PWR03
+U 1 1 560A4057
+P 3200 4850
+F 0 "#PWR03" H 3200 4810 30  0001 C CNN
+F 1 "+3.3V" H 3200 4960 30  0000 C CNN
+F 2 "" H 3200 4850 60  0000 C CNN
+F 3 "" H 3200 4850 60  0000 C CNN
+	1    3200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_8 P112
+U 1 1 560A42A8
+P 10300 4100
+F 0 "P112" V 10250 4100 60  0000 C CNN
+F 1 "CONN_8" V 10350 4100 60  0000 C CNN
+F 2 "SIL-8_Windlogger" H 10300 4100 60  0001 C CNN
+F 3 "" H 10300 4100 60  0000 C CNN
+	1    10300 4100
+	1    0    0    -1  
+$EndComp
+Text Notes 10450 3650 0    60   ~ 0
+CLKO/ICP1
+Text Notes 10450 3550 0    60   ~ 0
+OC1A/PWM
+Text Notes 10450 3450 0    60   ~ 0
+OC1B/SS/PWM
+Text Notes 10450 3350 0    60   ~ 0
+OC2A/MOSI/PWM
+Text Notes 10450 3250 0    60   ~ 0
+MISO
+Text Notes 10450 3150 0    60   ~ 0
+SCK
+Text Notes 10450 3050 0    60   ~ 0
+GND
+Text Notes 10450 2950 0    60   ~ 0
+AREF
+Text Notes 8950 4000 0    60   ~ 0
+ADC0
+Text Notes 8950 4100 0    60   ~ 0
+ADC1
+Text Notes 8950 4200 0    60   ~ 0
+ADC2
+Text Notes 8950 4300 0    60   ~ 0
+ADC3
+Text Notes 8950 4400 0    60   ~ 0
+ADC4
+Text Notes 8950 4500 0    60   ~ 0
+ADC5
+Text Notes 10450 4500 0    60   ~ 0
+RXD
+Text Notes 10450 4400 0    60   ~ 0
+TXD
+Text Notes 10450 4300 0    60   ~ 0
+INT0
+Text Notes 10450 4200 0    60   ~ 0
+INT1/OC2B
+Text Notes 10450 4100 0    60   ~ 0
+XCK/T0
+Text Notes 10450 4000 0    60   ~ 0
+OC0B/T1
+Text Notes 10450 3900 0    60   ~ 0
+OC0A/AIN0
+Text Notes 8950 3350 0    60   ~ 0
+GND
+Text Notes 8950 3150 0    60   ~ 0
+3.3V
+Text Notes 8950 3250 0    60   ~ 0
+5V
+Text Notes 8950 3050 0    60   ~ 0
+RESET
+$Comp
+L CONN_5 P102
+U 1 1 560A4758
+P 2400 6600
+F 0 "P102" V 2350 6600 50  0000 C CNN
+F 1 "CONN_5" V 2450 6600 50  0000 C CNN
+F 2 "USB_MINI_B" H 2400 6600 60  0001 C CNN
+F 3 "" H 2400 6600 60  0000 C CNN
+	1    2400 6600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR04
+U 1 1 560A4879
+P 3250 6550
+F 0 "#PWR04" H 3250 6550 40  0001 C CNN
+F 1 "AGND" H 3250 6480 50  0000 C CNN
+F 2 "" H 3250 6550 60  0000 C CNN
+F 3 "" H 3250 6550 60  0000 C CNN
+	1    3250 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 560A496F
+P 3100 6300
+F 0 "#FLG05" H 3100 6395 30  0001 C CNN
+F 1 "PWR_FLAG" H 3100 6480 30  0000 C CNN
+F 2 "" H 3100 6300 60  0000 C CNN
+F 3 "" H 3100 6300 60  0000 C CNN
+	1    3100 6300
+	1    0    0    -1  
+$EndComp
+Text Label 3100 6800 0    60   ~ 0
+5V
+Text Notes 10450 3800 0    60   ~ 0
+AIN1
+Text Label 5450 800  0    60   ~ 0
+Speed1
+Text Label 5450 1250 0    60   ~ 0
+Speed2
+Text Label 5450 2200 0    60   ~ 0
+Udir
+Text Label 5450 3100 0    60   ~ 0
+Ugrid
+Text Label 5450 3500 0    60   ~ 0
+IAC
+Text Label 5450 4400 0    60   ~ 0
+Ubat
+Text Label 5450 5700 0    60   ~ 0
+Utemp
+Text Label 5400 6950 0    60   ~ 0
+Power_fail
+Text Label 8100 3950 0    60   ~ 0
+Udir
+Text Label 8100 4050 0    60   ~ 0
+Utemp
+Text Label 8100 4150 0    60   ~ 0
+Ugrid
+Text Label 8100 4250 0    60   ~ 0
+Ubat
+Text Label 8100 4350 0    60   ~ 0
+IAC
+Text Label 8100 4450 0    60   ~ 0
+IDC
+Text Label 9450 4050 0    60   ~ 0
+Speed1
+Text Label 9450 3950 0    60   ~ 0
+Speed2
+$Comp
+L AGND #PWR06
+U 1 1 560A5571
+P 8100 3550
+F 0 "#PWR06" H 8100 3550 40  0001 C CNN
+F 1 "AGND" H 8100 3450 50  0000 C CNN
+F 2 "" H 8100 3550 60  0000 C CNN
+F 3 "" H 8100 3550 60  0000 C CNN
+	1    8100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR07
+U 1 1 560A5580
+P 8200 3000
+F 0 "#PWR07" H 8200 2960 30  0001 C CNN
+F 1 "+3.3V" H 8200 3110 30  0000 C CNN
+F 2 "" H 8200 3000 60  0000 C CNN
+F 3 "" H 8200 3000 60  0000 C CNN
+	1    8200 3000
+	1    0    0    -1  
+$EndComp
+Text Label 8200 3200 0    60   ~ 0
+5V
+Wire Wire Line
+	3200 4850 3200 4900
+Wire Wire Line
+	3000 800  3900 800 
+Wire Wire Line
+	3000 1250 3900 1250
+Wire Wire Line
+	3100 2950 3900 2950
+Wire Wire Line
+	3100 3150 3900 3150
+Wire Wire Line
+	3100 3350 3900 3350
+Wire Wire Line
+	3100 3550 3900 3550
+Wire Wire Line
+	3200 4900 3100 4900
+Wire Wire Line
+	3100 5000 3200 5000
+Wire Wire Line
+	3200 5000 3200 5200
+Wire Wire Line
+	5300 800  5900 800 
+Wire Wire Line
+	5300 1250 5900 1250
+Wire Wire Line
+	5300 6950 5900 6950
+Wire Wire Line
+	2800 6400 3250 6400
+Wire Wire Line
+	3250 6400 3250 6550
+Wire Wire Line
+	2800 6800 3900 6800
+Wire Wire Line
+	3100 6300 3100 6400
+Connection ~ 3100 6400
+Wire Wire Line
+	8000 3950 8450 3950
+Wire Wire Line
+	8000 4050 8450 4050
+Wire Wire Line
+	8000 4150 8450 4150
+Wire Wire Line
+	8000 4250 8450 4250
+Wire Wire Line
+	8000 4350 8450 4350
+Wire Wire Line
+	8000 4450 8450 4450
+Wire Wire Line
+	3100 5100 5900 5100
+Wire Wire Line
+	5300 2200 5900 2200
+Wire Wire Line
+	5300 3100 5900 3100
+Wire Wire Line
+	5300 3500 5900 3500
+Wire Wire Line
+	5300 4400 5900 4400
+Wire Wire Line
+	5300 5700 5900 5700
+Text Label 9400 3850 0    60   ~ 0
+Power_fail
+NoConn ~ 8450 3500
+NoConn ~ 2800 6700
+NoConn ~ 2800 6600
+NoConn ~ 2800 6500
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 560A5B9C
+P 3550 6700
+F 0 "#FLG08" H 3550 6795 30  0001 C CNN
+F 1 "PWR_FLAG" H 3550 6880 30  0000 C CNN
+F 2 "" H 3550 6700 60  0000 C CNN
+F 3 "" H 3550 6700 60  0000 C CNN
+	1    3550 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 6700 3550 6800
+Connection ~ 3550 6800
+$Comp
+L CONN_6 P110
+U 1 1 560B97C6
+P 8800 4200
+F 0 "P110" V 8750 4200 60  0000 C CNN
+F 1 "CONN_6" V 8850 4200 60  0000 C CNN
+F 2 "SIL-6_Winlogger" H 8800 4200 60  0001 C CNN
+F 3 "" H 8800 4200 60  0000 C CNN
+	1    8800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P101
+U 1 1 560B989F
+P 1150 7500
+F 0 "P101" V 1100 7500 40  0000 C CNN
+F 1 "CONN_2" V 1200 7500 40  0000 C CNN
+F 2 "PINHEAD1-2_Windlogger" H 1150 7500 60  0001 C CNN
+F 3 "" H 1150 7500 60  0000 C CNN
+	1    1150 7500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR09
+U 1 1 560B98F5
+P 1650 7650
+F 0 "#PWR09" H 1650 7650 40  0001 C CNN
+F 1 "AGND" H 1650 7580 50  0000 C CNN
+F 2 "" H 1650 7650 60  0000 C CNN
+F 3 "" H 1650 7650 60  0000 C CNN
+	1    1650 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 7600 1650 7600
+Wire Wire Line
+	1650 7600 1650 7650
+Wire Wire Line
+	1850 7500 5900 7500
+Text Label 5600 7500 0    60   ~ 0
+RPM
+Text Label 9500 3750 0    60   ~ 0
+RPM
+$Comp
+L CONN_10 P111
+U 1 1 560B99D2
+P 10300 3150
+F 0 "P111" V 10250 3150 60  0000 C CNN
+F 1 "CONN_10" V 10350 3150 60  0000 C CNN
+F 2 "SIL-10_Winlogger" H 10300 3150 60  0001 C CNN
+F 3 "" H 10300 3150 60  0000 C CNN
+	1    10300 3150
+	1    0    0    -1  
+$EndComp
+Text Notes 10450 2850 0    60   ~ 0
+SDA
+Text Notes 10450 2750 0    60   ~ 0
+SCL
+$Comp
+L AGND #PWR010
+U 1 1 560B9BA7
+P 9700 3100
+F 0 "#PWR010" H 9700 3100 40  0001 C CNN
+F 1 "AGND" H 9700 3030 50  0000 C CNN
+F 2 "" H 9700 3100 60  0000 C CNN
+F 3 "" H 9700 3100 60  0000 C CNN
+	1    9700 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9950 2700
+NoConn ~ 9950 2800
+NoConn ~ 9950 2900
+NoConn ~ 9950 3100
+NoConn ~ 9950 3200
+NoConn ~ 9950 3400
+NoConn ~ 9950 3500
+NoConn ~ 9950 3600
+$Comp
+L R R101
+U 1 1 560B9C15
+P 1850 7050
+F 0 "R101" V 1930 7050 40  0000 C CNN
+F 1 "10k" V 1857 7051 40  0000 C CNN
+F 2 "SM0805" V 1780 7050 30  0001 C CNN
+F 3 "~" H 1850 7050 30  0000 C CNN
+F 4 "0.125W" V 1850 7050 60  0001 C CNN "Puissance"
+F 5 "1%" V 1850 7050 60  0001 C CNN "Tolérance"
+	1    1850 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR011
+U 1 1 560B9C24
+P 1850 6700
+F 0 "#PWR011" H 1850 6660 30  0001 C CNN
+F 1 "+3.3V" H 1850 6810 30  0000 C CNN
+F 2 "" H 1850 6700 60  0000 C CNN
+F 3 "" H 1850 6700 60  0000 C CNN
+	1    1850 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 7300 1850 7500
+Wire Wire Line
+	1850 6800 1850 6700
+Text Notes 650  7500 0    60   ~ 0
+RPM\nSensor
+$Comp
+L CONN_8 P109
+U 1 1 560B9CB9
+P 8800 3150
+F 0 "P109" V 8750 3150 60  0000 C CNN
+F 1 "CONN_8" V 8850 3150 60  0000 C CNN
+F 2 "SIL-8_Windlogger" H 8800 3150 60  0001 C CNN
+F 3 "" H 8800 3150 60  0000 C CNN
+	1    8800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 3750 9300 3750
+Wire Wire Line
+	9950 3850 9300 3850
+Wire Wire Line
+	9950 3950 9300 3950
+Wire Wire Line
+	9950 4050 9300 4050
+NoConn ~ 9950 4150
+NoConn ~ 9950 4250
+NoConn ~ 9950 4350
+NoConn ~ 9950 4450
+NoConn ~ 9950 3300
+Wire Wire Line
+	9950 3000 9700 3000
+Wire Wire Line
+	9700 3000 9700 3100
+Text Notes 8950 2950 0    60   ~ 0
+IOREF
+Text Notes 8950 3450 0    60   ~ 0
+GND
+Text Notes 8950 3550 0    60   ~ 0
+Vin
+Text Notes 8950 2850 0    60   ~ 0
+Reserved
+Wire Wire Line
+	8450 3100 8200 3100
+Wire Wire Line
+	8200 3100 8200 3000
+Wire Wire Line
+	8450 3200 8100 3200
+Wire Wire Line
+	8100 3300 8100 3550
+Wire Wire Line
+	8100 3300 8450 3300
+Wire Wire Line
+	8450 3400 8100 3400
+Connection ~ 8100 3400
+Text Notes 8900 2350 0    60   ~ 0
+Arduino UNO R3 connectors
+$Comp
+L CONN_2 P103
+U 1 1 560D3213
+P 2400 7100
+F 0 "P103" V 2350 7100 40  0000 C CNN
+F 1 "CONN_2" V 2450 7100 40  0000 C CNN
+F 2 "PINHEAD1-2_Windlogger" H 2400 7100 60  0001 C CNN
+F 3 "" H 2400 7100 60  0000 C CNN
+	1    2400 7100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 7000 2900 7000
+Wire Wire Line
+	2750 7200 3000 7200
+Wire Wire Line
+	3000 7200 3000 6400
+Connection ~ 3000 6400
+Wire Wire Line
+	2900 7000 2900 6800
+Connection ~ 2900 6800
+$Comp
+L CONN_2 P108
+U 1 1 560D33F9
+P 2750 5700
+F 0 "P108" V 2700 5700 40  0000 C CNN
+F 1 "CONN_2" V 2800 5700 40  0000 C CNN
+F 2 "PINHEAD1-2_Windlogger" H 2750 5700 60  0001 C CNN
+F 3 "" H 2750 5700 60  0000 C CNN
+	1    2750 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 5600 3900 5600
+Wire Wire Line
+	3100 5800 3900 5800
+Text Label 3600 5600 2    60   ~ 0
+temp_hi
+Text Label 3600 5800 2    60   ~ 0
+temp_lo
+Wire Wire Line
+	3100 4300 3900 4300
+Wire Wire Line
+	3100 2200 3900 2200
+Text Notes 2550 5750 2    60   ~ 0
+Temperature sensor
+Wire Wire Line
+	6800 3050 7250 3050
+Wire Wire Line
+	6800 3150 7250 3150
+Wire Wire Line
+	6800 3250 7250 3250
+Wire Wire Line
+	7250 3350 6800 3350
+Wire Wire Line
+	7250 3450 6800 3450
+Wire Wire Line
+	7250 3550 6800 3550
+Wire Wire Line
+	7250 3650 6800 3650
+Wire Wire Line
+	7250 3750 6800 3750
+Wire Wire Line
+	7250 4050 6800 4050
+Wire Wire Line
+	7250 4150 6800 4150
+Wire Wire Line
+	7250 4250 6800 4250
+Wire Wire Line
+	7250 4350 6800 4350
+Text Label 6900 3050 0    60   ~ 0
+Wind1
+Text Label 6900 3150 0    60   ~ 0
+Wind2
+Text Label 6850 3250 0    60   ~ 0
+vane_sig
+Text Label 6900 3350 0    60   ~ 0
+UAC_hi
+Text Label 6900 3450 0    60   ~ 0
+UAC_lo
+Text Label 6900 3550 0    60   ~ 0
+IAC_hi
+Text Label 6900 3650 0    60   ~ 0
+IAC_lo
+Text Label 6850 3750 0    60   ~ 0
+UDC_hi
+Text Label 6900 4050 0    60   ~ 0
+IDC
+Text Label 6850 4150 0    60   ~ 0
+temp_hi
+Text Label 6850 4250 0    60   ~ 0
+temp_lo
+Text Label 6900 4350 0    60   ~ 0
+RPM
+Wire Wire Line
+	3900 1950 3750 1950
+Wire Wire Line
+	3750 1950 3750 2100
+Wire Wire Line
+	3750 2100 3100 2100
+Wire Wire Line
+	3100 2300 3750 2300
+Wire Wire Line
+	3750 2300 3750 2400
+Wire Wire Line
+	3750 2400 3900 2400
+Text Label 3250 2200 0    60   ~ 0
+vane_v-
+Text Label 3250 2100 0    60   ~ 0
+vane_v+
+$Comp
+L CONN_2 P107
+U 1 1 561CB76D
+P 2750 4400
+F 0 "P107" V 2700 4400 40  0000 C CNN
+F 1 "CONN_2" V 2800 4400 40  0000 C CNN
+F 2 "PINHEAD1-2_Windlogger" H 2750 4400 60  0001 C CNN
+F 3 "" H 2750 4400 60  0000 C CNN
+	1    2750 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_6 P114
+U 1 1 56279051
+P 7600 4200
+F 0 "P114" V 7550 4200 60  0000 C CNN
+F 1 "CONN_6" V 7650 4200 60  0000 C CNN
+F 2 "SIL-6_Winlogger" H 7600 4200 60  0001 C CNN
+F 3 "" H 7600 4200 60  0000 C CNN
+	1    7600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_8 P113
+U 1 1 56279060
+P 7600 3400
+F 0 "P113" V 7550 3400 60  0000 C CNN
+F 1 "CONN_8" V 7650 3400 60  0000 C CNN
+F 2 "SIL-8_Windlogger" H 7600 3400 60  0001 C CNN
+F 3 "" H 7600 3400 60  0000 C CNN
+	1    7600 3400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8450 2800
+NoConn ~ 8450 2900
+NoConn ~ 8450 3000
+$Comp
+L AGND #PWR012
+U 1 1 56289D84
+P 3450 4600
+F 0 "#PWR012" H 3450 4600 40  0001 C CNN
+F 1 "AGND" H 3450 4500 50  0000 C CNN
+F 2 "" H 3450 4600 60  0000 C CNN
+F 3 "" H 3450 4600 60  0000 C CNN
+	1    3450 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4600 3450 4500
+Wire Wire Line
+	3450 4500 3100 4500
+$Comp
+L AGND #PWR013
+U 1 1 5628A05F
+P 7050 4550
+F 0 "#PWR013" H 7050 4550 40  0001 C CNN
+F 1 "AGND" H 7050 4450 50  0000 C CNN
+F 2 "" H 7050 4550 60  0000 C CNN
+F 3 "" H 7050 4550 60  0000 C CNN
+	1    7050 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4550 7050 4450
+Wire Wire Line
+	7050 4450 7250 4450
+NoConn ~ 7250 3950
+$Comp
+L CONN_2 P104
+U 1 1 5628E35A
+P 2650 900
+F 0 "P104" V 2600 900 40  0000 C CNN
+F 1 "CONN_2" V 2700 900 40  0000 C CNN
+F 2 "PINHEAD1-2_Windlogger" H 2650 900 60  0001 C CNN
+F 3 "" H 2650 900 60  0000 C CNN
+	1    2650 900 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P115
+U 1 1 5628E369
+P 2650 1350
+F 0 "P115" V 2600 1350 40  0000 C CNN
+F 1 "CONN_2" V 2700 1350 40  0000 C CNN
+F 2 "PINHEAD1-2_Windlogger" H 2650 1350 60  0001 C CNN
+F 3 "" H 2650 1350 60  0000 C CNN
+	1    2650 1350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1000 3200 1000
+Wire Wire Line
+	3200 1000 3200 1050
+Wire Wire Line
+	3000 1450 3200 1450
+Wire Wire Line
+	3200 1450 3200 1500
+$Comp
+L AGND #PWR014
+U 1 1 5628EBD1
+P 3200 1500
+F 0 "#PWR014" H 3200 1500 40  0001 C CNN
+F 1 "AGND" H 3200 1430 50  0000 C CNN
+F 2 "" H 3200 1500 60  0000 C CNN
+F 3 "" H 3200 1500 60  0000 C CNN
+	1    3200 1500
+	1    0    0    -1  
+$EndComp
+Text Notes 850  1400 0    60   ~ 0
+Anemometer2 : Hall effect or ILS
+Wire Wire Line
+	1500 7400 1850 7400
+Connection ~ 1850 7400
+Text Notes 2150 7400 0    60   ~ 0
+Terminal screw for other power supply
+Text Notes 6950 2900 0    60   ~ 0
+debug connectors
+$EndSCHEMATC
