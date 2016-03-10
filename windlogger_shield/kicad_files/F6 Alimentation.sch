@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Windlogger-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -30,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Windlogger-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -63,7 +63,7 @@ Wire Wire Line
 	1000 1800 1250 1800
 NoConn ~ 2250 1700
 $Comp
-L C C603
+L C-RESCUE-Windlogger C603
 U 1 1 561F6D92
 P 6750 3450
 F 0 "C603" H 6750 3550 40  0000 L CNN
@@ -74,7 +74,7 @@ F 3 "~" H 6750 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C602
+L C-RESCUE-Windlogger C602
 U 1 1 561F6D9F
 P 4650 3450
 F 0 "C602" H 4650 3550 40  0000 L CNN
@@ -235,7 +235,7 @@ Wire Wire Line
 Wire Wire Line
 	9350 2900 9550 2900
 $Comp
-L R R605
+L R-RESCUE-Windlogger R605
 U 1 1 561F7977
 P 9800 2900
 F 0 "R605" V 9880 2900 40  0000 C CNN
@@ -248,7 +248,7 @@ F 5 "1%" V 9800 2900 60  0001 C CNN "Tolérance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D603
+L LED-RESCUE-Windlogger D603
 U 1 1 561F797D
 P 10450 2900
 F 0 "D603" H 10450 3000 50  0000 C CNN
@@ -281,7 +281,7 @@ Wire Wire Line
 	9350 2500 9350 2900
 Connection ~ 9350 2500
 $Comp
-L C C605
+L C-RESCUE-Windlogger C605
 U 1 1 561F99E6
 P 8900 2950
 F 0 "C605" H 8900 3050 40  0000 L CNN
@@ -308,7 +308,7 @@ Connection ~ 8900 2500
 Wire Wire Line
 	8900 3150 8900 3400
 $Comp
-L R R606
+L R-RESCUE-Windlogger R606
 U 1 1 5624A22A
 P 4600 2200
 F 0 "R606" V 4680 2200 40  0000 C CNN
@@ -326,9 +326,11 @@ Wire Wire Line
 	4600 1700 4600 1950
 Connection ~ 4600 2500
 $Comp
-L +3.3V #PWR067
+L +3.3V-RESCUE-Windlogger #PWR067
 U 1 1 56289455
 P 10100 2150
+AR Path="/56289455" Ref="#PWR067"  Part="1" 
+AR Path="/560A36AF/56289455" Ref="#PWR067"  Part="1" 
 F 0 "#PWR067" H 10100 2110 30  0001 C CNN
 F 1 "+3.3V" H 10100 2260 30  0000 C CNN
 F 2 "" H 10100 2150 60  0000 C CNN
@@ -368,9 +370,11 @@ Wire Wire Line
 	4850 1700 4850 3100
 Connection ~ 4850 2900
 $Comp
-L +3.3V #PWR068
+L +3.3V-RESCUE-Windlogger #PWR068
 U 1 1 5630AD15
 P 4850 1700
+AR Path="/5630AD15" Ref="#PWR068"  Part="1" 
+AR Path="/560A36AF/5630AD15" Ref="#PWR068"  Part="1" 
 F 0 "#PWR068" H 4850 1660 30  0001 C CNN
 F 1 "+3.3V" H 4850 1810 30  0000 C CNN
 F 2 "" H 4850 1700 60  0000 C CNN
@@ -379,9 +383,11 @@ F 3 "" H 4850 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR069
+L +3.3V-RESCUE-Windlogger #PWR069
 U 1 1 5630AD24
 P 4600 1700
+AR Path="/5630AD24" Ref="#PWR069"  Part="1" 
+AR Path="/560A36AF/5630AD24" Ref="#PWR069"  Part="1" 
 F 0 "#PWR069" H 4600 1660 30  0001 C CNN
 F 1 "+3.3V" H 4600 1810 30  0000 C CNN
 F 2 "" H 4600 1700 60  0000 C CNN

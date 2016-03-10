@@ -1,0 +1,65 @@
+PCBNEW-LibModule-V1  ven. 01 janv. 2016 15:31:41 CET
+# encoding utf-8
+Units mm
+$INDEX
+Trou_2_5_1_5
+Trou_3_10
+Trou_3_3
+$EndINDEX
+$MODULE Trou_2_5_1_5
+Po 0 0 0 15 56868DA1 00000000 F~
+Li Trou_2_5_1_5
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -4 1 1 0 0.1 N V 21 N ""
+T1 0.5 4 1 1 0 0.15 N V 21 N "VAL**"
+DS -0.35 1.05 0.45 1.05 0.15 21
+DS 0.6 -1 -0.5 -1 0.15 21
+DA -0.45 0 -0.35 1.05 900 0.15 21
+DA -0.5 0 -1.5 0 900 0.15 21
+DA 0.4 0 1.45 0.1 900 0.15 21
+DA 0.45 0 0.6 -1 900 0.15 21
+$PAD
+Sh "1" O 2.5 1.5 0 0 0
+Dr 2.5 0 0 O 2.5 1.5
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE Trou_2_5_1_5
+$MODULE Trou_3_10
+Po 0 0 0 15 563320F2 00000000 F~
+Li Trou_3_10
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -4 1 1 0 0.1 N V 21 N ""
+T1 0.5 4 1 1 0 0.15 N V 21 N "VAL**"
+DC 0 0 0 -5 0.15 21
+$PAD
+Sh "1" C 3 3 0 0 0
+Dr 2.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE Trou_3_10
+$MODULE Trou_3_3
+Po 0 0 0 15 56868C45 00000000 F~
+Li Trou_3_3
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -4 1 1 0 0.1 N V 21 N ""
+T1 0.5 4 1 1 0 0.15 N V 21 N "VAL**"
+DC 0 0 1.905 0 0.15 21
+$PAD
+Sh "1" C 3 3 0 0 0
+Dr 2.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE Trou_3_3
+$EndLIBRARY

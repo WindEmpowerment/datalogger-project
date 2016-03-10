@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Windlogger-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -30,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Windlogger-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -49,7 +49,7 @@ Wire Wire Line
 Text HLabel 3050 2950 0    60   Input ~ 0
 UDC_hi
 $Comp
-L R R503
+L R-RESCUE-Windlogger R503
 U 1 1 561287F5
 P 4650 4800
 F 0 "R503" V 4730 4800 40  0000 C CNN
@@ -108,9 +108,11 @@ F 3 "" H 6500 5100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR056
+L +3.3V-RESCUE-Windlogger #PWR056
 U 1 1 56128856
 P 6500 3950
+AR Path="/56128856" Ref="#PWR056"  Part="1" 
+AR Path="/560A3643/56128856" Ref="#PWR056"  Part="1" 
 F 0 "#PWR056" H 6500 3910 30  0001 C CNN
 F 1 "+3.3V" H 6500 4060 30  0000 C CNN
 F 2 "" H 6500 3950 60  0000 C CNN
@@ -158,7 +160,7 @@ Connection ~ 4650 4450
 Text Notes 3800 3200 2    60   ~ 0
 Use the jumper to select the maximum voltage :\n64V for Battery system\n640V to monitor a DC bus from an on grid system
 $Comp
-L R R501
+L R-RESCUE-Windlogger R501
 U 1 1 561E1CF9
 P 4300 3850
 F 0 "R501" V 4380 3850 40  0000 C CNN
@@ -171,7 +173,7 @@ F 5 "1%" V 4300 3850 60  0001 C CNN "Tolérance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R504
+L R-RESCUE-Windlogger R504
 U 1 1 561E1D08
 P 5000 3850
 F 0 "R504" V 5080 3850 40  0000 C CNN
@@ -210,9 +212,11 @@ F 3 "~" H 5500 4800 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3.3V #PWR057
+L +3.3V-RESCUE-Windlogger #PWR057
 U 1 1 561FC3A0
 P 5500 3700
+AR Path="/561FC3A0" Ref="#PWR057"  Part="1" 
+AR Path="/560A3643/561FC3A0" Ref="#PWR057"  Part="1" 
 F 0 "#PWR057" H 5500 3660 30  0001 C CNN
 F 1 "+3.3V" H 5500 3810 30  0000 C CNN
 F 2 "" H 5500 3700 60  0000 C CNN

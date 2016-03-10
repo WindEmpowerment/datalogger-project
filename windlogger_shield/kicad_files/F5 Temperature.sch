@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Windlogger-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -30,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Windlogger-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -57,9 +57,11 @@ F 4 "1%" V 4100 4050 60  0001 C CNN "Tolérance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR070
+L +3.3V-RESCUE-Windlogger #PWR070
 U 1 1 561521EF
 P 4100 2600
+AR Path="/561521EF" Ref="#PWR070"  Part="1" 
+AR Path="/560A36CB/561521EF" Ref="#PWR070"  Part="1" 
 F 0 "#PWR070" H 4100 2560 30  0001 C CNN
 F 1 "+3.3V" H 4100 2710 30  0000 C CNN
 F 2 "" H 4100 2600 60  0000 C CNN
@@ -107,9 +109,11 @@ F 3 "" H 5900 4250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR073
+L +3.3V-RESCUE-Windlogger #PWR073
 U 1 1 561522F5
 P 5900 3150
+AR Path="/561522F5" Ref="#PWR073"  Part="1" 
+AR Path="/560A36CB/561522F5" Ref="#PWR073"  Part="1" 
 F 0 "#PWR073" H 5900 3110 30  0001 C CNN
 F 1 "+3.3V" H 5900 3260 30  0000 C CNN
 F 2 "" H 5900 3150 60  0000 C CNN
@@ -128,7 +132,7 @@ Wire Wire Line
 Text HLabel 9700 3600 2    60   Output ~ 0
 Utemp
 $Comp
-L C C701
+L C-RESCUE-Windlogger C701
 U 1 1 5615255D
 P 7250 5500
 F 0 "C701" H 7250 5600 40  0000 L CNN
@@ -140,9 +144,11 @@ F 4 "25V" H 7250 5500 60  0001 C CNN "Tension"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR074
+L +3.3V-RESCUE-Windlogger #PWR074
 U 1 1 5615256C
 P 7250 5150
+AR Path="/5615256C" Ref="#PWR074"  Part="1" 
+AR Path="/560A36CB/5615256C" Ref="#PWR074"  Part="1" 
 F 0 "#PWR074" H 7250 5110 30  0001 C CNN
 F 1 "+3.3V" H 7250 5260 30  0000 C CNN
 F 2 "" H 7250 5150 60  0000 C CNN
@@ -173,7 +179,7 @@ temp_hi
 Text HLabel 3300 4400 0    60   Input ~ 0
 temp_lo
 $Comp
-L R R701
+L R-RESCUE-Windlogger R701
 U 1 1 561E1EE7
 P 4100 3000
 F 0 "R701" V 4180 3000 40  0000 C CNN
@@ -186,7 +192,7 @@ F 5 "1%" V 4100 3000 60  0001 C CNN "Tolérance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R703
+L R-RESCUE-Windlogger R703
 U 1 1 5624BBCD
 P 4100 4850
 F 0 "R703" V 4180 4850 40  0000 C CNN
@@ -210,7 +216,7 @@ F 3 "" H 8600 3600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R702
+L R-RESCUE-Windlogger R702
 U 1 1 562792A9
 P 5200 4250
 F 0 "R702" V 5280 4250 40  0000 C CNN
@@ -223,7 +229,7 @@ F 5 "1/8W" V 5200 4250 60  0001 C CNN "Puissance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R704
+L R-RESCUE-Windlogger R704
 U 1 1 562792B8
 P 5900 4700
 F 0 "R704" V 5980 4700 40  0000 C CNN
@@ -248,7 +254,7 @@ Wire Wire Line
 	6650 4700 6650 3700
 Connection ~ 6650 3700
 $Comp
-L R R705
+L R-RESCUE-Windlogger R705
 U 1 1 5627934E
 P 7300 3700
 F 0 "R705" V 7380 3700 40  0000 C CNN
@@ -274,7 +280,7 @@ F 3 "" H 5200 5200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R706
+L R-RESCUE-Windlogger R706
 U 1 1 562793BC
 P 8500 4700
 F 0 "R706" V 8580 4700 40  0000 C CNN
@@ -296,9 +302,11 @@ Wire Wire Line
 Wire Wire Line
 	8500 3000 8500 3200
 $Comp
-L +3.3V #PWR077
+L +3.3V-RESCUE-Windlogger #PWR077
 U 1 1 56279444
 P 8500 3000
+AR Path="/56279444" Ref="#PWR077"  Part="1" 
+AR Path="/560A36CB/56279444" Ref="#PWR077"  Part="1" 
 F 0 "#PWR077" H 8500 2960 30  0001 C CNN
 F 1 "+3.3V" H 8500 3110 30  0000 C CNN
 F 2 "" H 8500 3000 60  0000 C CNN

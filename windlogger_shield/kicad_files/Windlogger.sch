@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Windlogger-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -30,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Windlogger-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -200,7 +200,7 @@ UDC_hi
 Text Label 5450 5100 0    60   ~ 0
 IDC
 $Comp
-L +3.3V #PWR03
+L +3.3V-RESCUE-Windlogger #PWR03
 U 1 1 560A4057
 P 3200 4850
 F 0 "#PWR03" H 3200 4810 30  0001 C CNN
@@ -352,7 +352,7 @@ F 3 "" H 8100 3550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR07
+L +3.3V-RESCUE-Windlogger #PWR07
 U 1 1 560A5580
 P 8200 3000
 F 0 "#PWR07" H 8200 2960 30  0001 C CNN
@@ -521,7 +521,7 @@ NoConn ~ 9950 3400
 NoConn ~ 9950 3500
 NoConn ~ 9950 3600
 $Comp
-L R R101
+L R-RESCUE-Windlogger R101
 U 1 1 560B9C15
 P 1850 7050
 F 0 "R101" V 1930 7050 40  0000 C CNN
@@ -534,7 +534,7 @@ F 5 "1%" V 1850 7050 60  0001 C CNN "Tolérance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR011
+L +3.3V-RESCUE-Windlogger #PWR011
 U 1 1 560B9C24
 P 1850 6700
 F 0 "#PWR011" H 1850 6660 30  0001 C CNN
