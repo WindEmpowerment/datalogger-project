@@ -35,12 +35,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
-Title "AC/DC voltage  conversion"
-Date "2016-10-16"
-Rev "A"
-Comp "ALEEA"
-Comment1 "LONGUET Gilles"
-Comment2 "AGPLv3"
+Title "Fonction Wattmètre AC"
+Date "1 jan 2016"
+Rev ""
+Comp "Wind Empowerment"
+Comment1 "GIRAULT Etienne"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr

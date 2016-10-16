@@ -3,7 +3,7 @@
   (general
     (links 216)
     (no_connects 216)
-    (area -116.84 41.617459 213.428001 144.502002)
+    (area 78.322539 41.617459 213.428001 136.717461)
     (thickness 1.6)
     (drawings 4)
     (tracks 0)
@@ -13,15 +13,6 @@
   )
 
   (page A4)
-  (title_block
-    (title "Windlogger Shield PCB")
-    (date 2016-10-16)
-    (rev A)
-    (company ALEEA)
-    (comment 1 "LONGUET Gilles")
-    (comment 2 AGPLv3)
-  )
-
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
