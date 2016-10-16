@@ -6,13 +6,13 @@ This work is an initiative by Gilles LONGUET from Tripalium and the Measurment w
 # Organisation :
 This datalogger is design on two principal boards, one for the sensor signal adaptation on a second for the numerical work.
 Plug the first on the second and you have the hardware to monitor a wind turbine with these possibilities :
-	- 2 anemometers
-	- 1 windvane
-	- 1 AC voltage sensor
-	- 1 DC voltage sensor
-	- 4 DC/AC current sensors
-	- 1 RPM sensors
-	- 1 temperature sensor
+- 2 anemometers
+- 1 windvane
+- 1 AC voltage sensor
+- 1 DC voltage sensor
+- 4 DC/AC current sensors
+- 1 RPM sensors
+- 1 temperature sensor
 	
 The data is available on an UART permanently and with the UART to USB converter you can collect them directly on a computer.
 Data can be write on the SD card too.
@@ -28,13 +28,13 @@ Ce travail est une initiative de Gilles Longuet pour Tripalium et le Measurment 
 # Organisation :
 Cet enregistreur de données est développé autour de deux cartes, une première pour le traitement des signaux provenant des capteurs et une seconde pour tout le traitement numérique des données.
 Il suffit de connecter la première carte sur la seconde pour avoir un enregistreur de données avec les possibilités suivantes :
-	- 2 anémomètres
-	- 1 girouette
-	- 1 sonde de tension AC
-	- 1 sonde de tension DC
-	- 4 sondes de courant AC ou DC
-	- 1 sonde RPM
-	- 1 sonde de température
+- 2 anémomètres
+- 1 girouette
+- 1 sonde de tension AC
+- 1 sonde de tension DC
+- 4 sondes de courant AC ou DC
+- 1 sonde RPM
+- 1 sonde de température
 	
 Les données sont disponibles sur un UART de façon permanente et avec l'adaptateur UART/USB vous pouvez directement collecter les données sur un ordinateur. Les données peuvent aussi être enregistré sur une carte SD.
 Pour transmettre les données, vous devez choisir un module. Soit vous utilisez un module du type ESP wifi, pour envoyer vos données sur votre wifi local. Soit vous utilisez un module GPRS pour transmettre les donnés à distances.
