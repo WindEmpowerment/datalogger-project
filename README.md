@@ -1,4 +1,4 @@
-# datalogger-project
+# datalogger-project (EN)
 Datalogger's development in order to monitor a wind turbine (wind speed, wind direction, power).
 
 This work is an initiative by Gilles LONGUET from Tripalium and the Measurment working group from WindEmpowerment.
@@ -20,7 +20,7 @@ To transmit the data, you need to chose a transmitter. You can connect a ESP wif
 Emoncms is used to collect data on a remote server, to add process on and record data. It's also used to visualize data.
 
 
-# datalogger-project
+# datalogger-project (FR)
 Développement d'un enregistreur de données pour monitorer une éolienne (vitesse et direction du vent et puissance produite).
 
 Ce travail est une initiative de Gilles Longuet pour Tripalium et le Measurment working group de WindEmpowerment.
