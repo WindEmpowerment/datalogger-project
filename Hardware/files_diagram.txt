@@ -1,0 +1,5 @@
+/board_name/	readme.md
+		pics*.png
+		board_name_letter_version.odt
+		kicad/kicad_files
+		PDF/kicad_pdf_output

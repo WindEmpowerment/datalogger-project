@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Socket_Arduino_Mega)(type KiCad)(uri /home/gilou/Documents/Electronique/windlogger_2016/shield/kicad/Socket_Arduino_Mega.pretty)(options "")(descr ""))
+)
