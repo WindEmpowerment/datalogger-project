@@ -51,5 +51,5 @@ Contain the software for the microcontroller.
 Contain the files on the different hardware boards.
 
 ## windlogger_shield(old) repo :
-contain the work than was done by Etienne, a student. He does that to help us for an internship of 6 weeks. This is an archive, the new version is in the Hardware repo.
+Contain the work than was done by Etienne, a student. He does that to help us for an internship of 6 weeks. This is an archive, the new version is in the Hardware repo.
 The report is in French.
