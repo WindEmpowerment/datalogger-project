@@ -4,7 +4,7 @@ Hardware oraganisation
 2 cards and modules 
 
 ## BLOCK DIAGRAM
-![windlogger shield block diagram](/Hardware/diagram.svg)
+![windlogger shield block diagram](/Hardware/diagram.png)
 
 ## Todo list
 - chose the componants
