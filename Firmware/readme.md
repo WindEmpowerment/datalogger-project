@@ -8,5 +8,6 @@ here is the data collected :
 <div>
 http://desplanchesdepalette.org/emoncms/gilou&embed=1
 </div>
+<iframe style="width:600px; height:1000px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://desplanchesdepalette.org/emoncms/gilou&embed=1"></iframe>
 
 Work is under development and lot's of function need to be implemented.
