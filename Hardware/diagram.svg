@@ -15,7 +15,7 @@
    viewBox="0 0 1007.8862 408.45294"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="diagram.svg">
   <defs
      id="defs4">
@@ -407,8 +407,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="318.28915"
+     inkscape:zoom="0.77885775"
+     inkscape:cx="503.94312"
      inkscape:cy="88.405095"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -420,10 +420,10 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:snap-bbox="true"
-     inkscape:window-width="1680"
-     inkscape:window-height="997"
+     inkscape:window-width="1366"
+     inkscape:window-height="746"
      inkscape:window-x="0"
-     inkscape:window-y="31"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      units="px" />
   <metadata
@@ -461,23 +461,27 @@
      transform="translate(490.27643,-265.54639)"
      style="display:inline">
     <rect
-       style="fill:#00ff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349"
        width="90.552841"
        height="53.088558"
        x="-484.27643"
        y="271.71078"
-       ry="5.0116148" />
+       ry="5.0116148"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
-       style="fill:#00ff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-3"
        width="90.552841"
        height="53.088558"
        x="-483.67984"
        y="340.30365"
-       ry="5.0116148" />
+       ry="5.0116148"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
-       style="fill:#ffff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-6"
        width="90.552841"
        height="53.088558"
@@ -485,55 +489,72 @@
        y="408.89648"
        ry="5.0116148" />
     <rect
-       style="fill:#00ff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-7"
        width="90.552841"
        height="53.088558"
        x="-484.27643"
        y="477.48935"
-       ry="5.0116148" />
+       ry="5.0116148"
+       inkscape:export-filename="/home/gilou/Documents/git_repos/datalogger-project/Hardware/rect3349-35.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
-       style="fill:#00ff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-5"
        width="90.552841"
        height="53.088558"
        x="-484.27643"
        y="546.08221"
-       ry="5.0116148" />
+       ry="5.0116148"
+       inkscape:export-filename="/home/gilou/Documents/git_repos/datalogger-project/Hardware/rect3349-35.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
-       style="fill:#00ff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-35"
        width="90.552841"
        height="53.088558"
        x="-484.27643"
        y="614.67505"
-       ry="5.0116148" />
+       ry="5.0116148"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
-       style="fill:#00ff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-62"
        width="43.345688"
        height="172.48854"
        x="-349.92291"
        y="271.54639"
-       ry="8.8456116" />
+       ry="8.8456116"
+       inkscape:export-filename="/home/gilou/Documents/git_repos/datalogger-project/Hardware/rect3349-35.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
-       style="fill:#00ff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-62-9"
        width="43.345688"
        height="172.48854"
        x="-349.9346"
        y="495.5108"
-       ry="7.1581116" />
+       ry="7.1581116"
+       inkscape:export-filename="/home/gilou/Documents/git_repos/datalogger-project/Hardware/rect3349-35.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
-       style="fill:#00ff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-1"
        width="172.54512"
        height="64.080833"
        x="-264.23685"
        y="271.71466"
-       ry="6.0492969" />
+       ry="6.0492969"
+       inkscape:export-filename="/home/gilou/Documents/git_repos/datalogger-project/Hardware/rect3349-35.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
-       style="fill:#ffff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2.18085814;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2.18085813999999978;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-1-2"
        width="172.36426"
        height="76.274345"
@@ -541,7 +562,7 @@
        y="591.18073"
        ry="10.324894" />
     <rect
-       style="fill:#ffff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-1-2-7"
        width="173.76884"
        height="160.70468"
@@ -549,15 +570,18 @@
        y="387.40277"
        ry="8.796154" />
     <rect
-       style="fill:#00ff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-1-2-0"
        width="143.62241"
        height="53.719677"
        x="33.97451"
        y="272.59192"
-       ry="5.0711927" />
+       ry="5.0711927"
+       inkscape:export-filename="/home/gilou/Documents/git_repos/datalogger-project/Hardware/rect3349-35.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
-       style="fill:#ff0000;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-1-2-0-9"
        width="143.62241"
        height="53.719677"
@@ -565,7 +589,7 @@
        y="340.48026"
        ry="5.0711927" />
     <rect
-       style="fill:#ff0000;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-1-2-0-9-3"
        width="143.62241"
        height="53.719677"
@@ -573,7 +597,7 @@
        y="408.36859"
        ry="5.0711927" />
     <rect
-       style="fill:#ff0000;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-1-2-0-9-6"
        width="143.62241"
        height="53.719677"
@@ -581,7 +605,7 @@
        y="476.2569"
        ry="5.0711927" />
     <rect
-       style="fill:#ff0000;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff0000;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-1-2-0-9-0"
        width="143.62241"
        height="53.719677"
@@ -597,13 +621,16 @@
        y="308.99786"
        ry="5.3655324" />
     <rect
-       style="fill:#00ff00;fill-opacity:0.1372549;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ff00;fill-opacity:0.39215687;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-1-2-0-9-62-6"
        width="111.24038"
        height="56.837646"
        x="217.41553"
        y="610.43982"
-       ry="5.3655324" />
+       ry="5.3655324"
+       inkscape:export-filename="/home/gilou/Documents/git_repos/datalogger-project/Hardware/rect3349-35.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3349-1-2-0-9-62-1"
@@ -613,31 +640,31 @@
        y="442.4957"
        ry="2.7259214" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#f39900;stroke-width:0.7802251px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       style="fill:none;stroke:#f39900;stroke-width:0.7802251px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
        d="m -392.48427,297.72605 40.49502,40.10691"
        id="path4371"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="3" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#f39900;stroke-width:0.95242339px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4711)"
+       style="fill:none;stroke:#f39900;stroke-width:0.95242339px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4711)"
        d="m -392.62932,572.06758 40.12198,9.71864"
        id="path4703"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="3" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#f39900;stroke-width:0.94747883px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4817)"
+       style="fill:none;stroke:#f39900;stroke-width:0.94747883px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4817)"
        d="m -392.40302,504.08356 40.29735,45.14463"
        id="path4793"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="3" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#f39900;stroke-width:0.96726078px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4857)"
+       style="fill:none;stroke:#f39900;stroke-width:0.96726078px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4857)"
        d="m -392.63471,640.11285 39.98132,-8.55186"
        id="path4801"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="3" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#f39900;stroke-width:0.91761863px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4753)"
+       style="fill:none;stroke:#f39900;stroke-width:0.91761863px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4753)"
        d="m -391.72167,366.3425 42.05371,131.08472"
        id="path4803"
        inkscape:connector-type="polyline"
