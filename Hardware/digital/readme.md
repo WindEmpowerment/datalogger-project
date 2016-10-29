@@ -1,15 +1,12 @@
-# SHIELD
-This board contains the functions to convert the signals from sensors to signals for the microcontroller.
-
-This board is design to be plug in the digital board, but you can use it with an arduino uno or mega.
-
-Comment are insert in the schematic, open the kicad project or the pdf export to read those.
+# DIGITALs
+This board contains all the needs to use an Atmega1284p like an Arduino. But because it's a prototype board, the power is a small shield to be upgradable. On this digital board, the shield can be plug.
+A sd card module and a transmitter module can be add too. This permit to collect data on the SD card and/or send it by wifi or gprs.
 
 ## BLOCK DIAGRAM
-![windlogger shield block diagram](/Hardware/shield/shield_bd.png)
+![windlogger digital block diagram](/Hardware/digital/digital_bd.png)
 
 ## RENDER PREVIEW
-![windlogger shield render preview](/Hardware/shield/shield_preview.jpg)
+![windlogger digital render preview](/Hardware/digital/digital_preview.jpg)
 
 ## Todo list
 - chose the componants

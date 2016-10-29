@@ -1,4 +1,4 @@
-update=mar. 18 oct. 2016 07:38:05 CEST
+update=dim. 30 oct. 2016 00:03:03 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,13 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=/home/gilou/Documents/logiciels/kicad_lib/Hope_RFM
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../PDF/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
