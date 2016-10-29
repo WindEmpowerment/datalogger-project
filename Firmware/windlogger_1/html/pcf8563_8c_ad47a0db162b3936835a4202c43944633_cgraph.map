@@ -1,0 +1,7 @@
+<map id="debug_RTC_timestamp_calc" name="debug_RTC_timestamp_calc">
+<area shape="rect" id="node2" href="$debug_8h.html#a9c820e95af19999d7193325e31de4672" title="debug_print" alt="" coords="247,5,337,32"/>
+<area shape="rect" id="node5" href="$debug_8h.html#ae260ab13d9f22f3c0a186304e14176d8" title="debug_printu" alt="" coords="244,56,340,83"/>
+<area shape="rect" id="node6" href="$debug_8h.html#a95f1b5296f2c4e17a16ea7fad6f82d06" title="debug_printl" alt="" coords="246,107,338,133"/>
+<area shape="rect" id="node3" href="$usart_8h.html#a10ffb84489ffa558957478db64fea022" title="USART0_print" alt="" coords="388,56,495,83"/>
+<area shape="rect" id="node4" href="$usart_8c.html#a74e0069ed27a738a80035a24df80bdc4" title="USART0_set" alt="" coords="543,56,643,83"/>
+</map>

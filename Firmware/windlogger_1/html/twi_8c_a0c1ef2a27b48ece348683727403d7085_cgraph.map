@@ -1,0 +1,6 @@
+<map id="TWI_print" name="TWI_print">
+<area shape="rect" id="node2" href="$twi_8c.html#a9b94cbc0da2704177ff879e94117a95a" title="TWI_start" alt="" coords="149,5,229,32"/>
+<area shape="rect" id="node3" href="$twi_8c.html#a5cfae0cf23f4e333c81a5a87c00c887e" title="TWI_get_status" alt="" coords="132,56,247,83"/>
+<area shape="rect" id="node4" href="$twi_8c.html#a880902268847e55c40289924b7924889" title="TWI_set" alt="" coords="153,107,225,133"/>
+<area shape="rect" id="node5" href="$twi_8c.html#aa6e5ad7edaa886c200aa971ff32c82fa" title="TWI_stop" alt="" coords="150,157,229,184"/>
+</map>

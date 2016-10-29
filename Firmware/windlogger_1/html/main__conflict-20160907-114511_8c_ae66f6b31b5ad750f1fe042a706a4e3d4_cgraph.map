@@ -1,0 +1,12 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$eeprom__manage_8h.html#a2c53377af361f0f386ea3ddccd34c38e" title="ee_read_logger" alt="" coords="104,5,215,32"/>
+<area shape="rect" id="node3" href="$sensors_8h.html#adb39da4c03796e70323f437f7eade737" title="measure_clear" alt="" coords="106,56,213,83"/>
+<area shape="rect" id="node4" href="$pcf8563_8h.html#a2cfa9787bf84d1f3893229e0e4fa6ba5" title="RTC_init" alt="" coords="122,157,197,184"/>
+<area shape="rect" id="node5" href="$debug_8h.html#a9c820e95af19999d7193325e31de4672" title="debug_print" alt="" coords="263,107,352,133"/>
+<area shape="rect" id="node6" href="$usart_8h.html#a10ffb84489ffa558957478db64fea022" title="USART0_print" alt="" coords="400,157,507,184"/>
+<area shape="rect" id="node9" href="$usart_8h.html#a70e8a1175d78e6dd555a4a326bb2e427" title="USART0_init" alt="" coords="110,259,209,285"/>
+<area shape="rect" id="node10" href="$time_8h.html#a005388f6e2fad37bb0824bf92193c865" title="init_FSM" alt="" coords="122,309,197,336"/>
+<area shape="rect" id="node11" href="$usart_8h.html#a74e0069ed27a738a80035a24df80bdc4" title="USART0_set" alt="" coords="109,360,209,387"/>
+<area shape="rect" id="node8" href="$twi_8h.html#a664c16d4fda88f5d944846937e7040d5" title="TWI_init" alt="" coords="272,157,343,184"/>
+<area shape="rect" id="node7" href="$usart_8c.html#a74e0069ed27a738a80035a24df80bdc4" title="USART0_set" alt="" coords="555,157,655,184"/>
+</map>

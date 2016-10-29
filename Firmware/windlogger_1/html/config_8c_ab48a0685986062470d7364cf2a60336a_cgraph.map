@@ -1,0 +1,5 @@
+<map id="config_update" name="config_update">
+<area shape="rect" id="node2" href="$usart_8h.html#a10ffb84489ffa558957478db64fea022" title="USART0_print" alt="" coords="163,5,270,32"/>
+<area shape="rect" id="node4" href="$pcf8563_8h.html#addbaa5a860d6c18c4adb4ac32256aca8" title="RTC_update_reg" alt="" coords="156,56,277,83"/>
+<area shape="rect" id="node3" href="$usart_8c.html#a74e0069ed27a738a80035a24df80bdc4" title="USART0_set" alt="" coords="325,5,425,32"/>
+</map>

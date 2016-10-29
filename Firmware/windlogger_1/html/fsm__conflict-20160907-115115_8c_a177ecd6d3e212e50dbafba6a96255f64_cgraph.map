@@ -1,0 +1,25 @@
+<map id="state_config" name="state_config">
+<area shape="rect" id="node2" href="$usart_8h.html#afd73fe4d8cad3d3d733cbc1fb3061901" title="USART0_print_conf" alt="" coords="297,5,436,32"/>
+<area shape="rect" id="node5" href="$config_8h.html#ab48a0685986062470d7364cf2a60336a" title="config_update" alt="" coords="147,157,249,184"/>
+<area shape="rect" id="node8" href="$usart_8h.html#a10ffb84489ffa558957478db64fea022" title="USART0_print" alt="" coords="1044,132,1151,159"/>
+<area shape="rect" id="node21" href="$debug_8h.html#a9c820e95af19999d7193325e31de4672" title="debug_print" alt="" coords="903,208,993,235"/>
+<area shape="rect" id="node3" href="$usart_8c.html#a10ffb84489ffa558957478db64fea022" title="USART0_print" alt="" coords="1044,31,1151,57"/>
+<area shape="rect" id="node4" href="$usart_8c.html#a74e0069ed27a738a80035a24df80bdc4" title="USART0_set" alt="" coords="1199,81,1299,108"/>
+<area shape="rect" id="node6" href="$usart_8h.html#a2a8c8b9e4e3b90f10c6b81c20f6088ca" title="get_Arg" alt="" coords="333,107,400,133"/>
+<area shape="rect" id="node7" href="$eeprom__manage_8h.html#a7bd5b05023bff6a5c46a3783d4cc2268" title="ee_write_logger" alt="" coords="310,157,423,184"/>
+<area shape="rect" id="node9" href="$pcf8563_8h.html#addbaa5a860d6c18c4adb4ac32256aca8" title="RTC_update_reg" alt="" coords="306,259,427,285"/>
+<area shape="rect" id="node16" href="$pcf8563_8h.html#a0ccb584cefa47229031dcfc50ab8bb86" title="RTC_get_date" alt="" coords="313,208,420,235"/>
+<area shape="rect" id="node10" href="$twi_8h.html#a7499132577b2a63bd21a56fa51521e94" title="TWI_set_char" alt="" coords="497,309,601,336"/>
+<area shape="rect" id="node15" href="$pcf8563_8c.html#a3ff4c4595b0504b07cf31c3de610c615" title="utoBCD" alt="" coords="514,259,583,285"/>
+<area shape="rect" id="node11" href="$twi_8c.html#a9b94cbc0da2704177ff879e94117a95a" title="TWI_start" alt="" coords="717,411,797,437"/>
+<area shape="rect" id="node12" href="$twi_8c.html#a5cfae0cf23f4e333c81a5a87c00c887e" title="TWI_get_status" alt="" coords="699,259,814,285"/>
+<area shape="rect" id="node13" href="$twi_8c.html#a880902268847e55c40289924b7924889" title="TWI_set" alt="" coords="721,309,793,336"/>
+<area shape="rect" id="node14" href="$twi_8c.html#aa6e5ad7edaa886c200aa971ff32c82fa" title="TWI_stop" alt="" coords="717,360,796,387"/>
+<area shape="rect" id="node17" href="$twi_8h.html#a6cf88fd2425855013b9006204e59a665" title="TWI_receive" alt="" coords="501,107,597,133"/>
+<area shape="rect" id="node18" href="$pcf8563_8c.html#a9fed19c424949944ffce9051df8e771c" title="rtc_time_to_epoch" alt="" coords="484,157,613,184"/>
+<area shape="rect" id="node24" href="$pcf8563_8c.html#a6c46cd6c560abc8df70d7174aeda9aae" title="debug_RTC_print_Time" alt="" coords="677,208,837,235"/>
+<area shape="rect" id="node19" href="$pcf8563_8c.html#a509a14ac8602502c61bc9ac845c06a33" title="is_leap_year" alt="" coords="709,107,804,133"/>
+<area shape="rect" id="node20" href="$pcf8563_8c.html#ad47a0db162b3936835a4202c43944633" title="debug_RTC_timestamp_calc" alt="" coords="661,157,852,184"/>
+<area shape="rect" id="node22" href="$debug_8h.html#ae260ab13d9f22f3c0a186304e14176d8" title="debug_printu" alt="" coords="900,157,996,184"/>
+<area shape="rect" id="node23" href="$debug_8h.html#a95f1b5296f2c4e17a16ea7fad6f82d06" title="debug_printl" alt="" coords="902,107,994,133"/>
+</map>

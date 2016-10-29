@@ -1,0 +1,8 @@
+<map id="TWI_get_char" name="TWI_get_char">
+<area shape="rect" id="node2" href="$twi_8c.html#a9b94cbc0da2704177ff879e94117a95a" title="TWI_start" alt="" coords="175,5,255,32"/>
+<area shape="rect" id="node3" href="$twi_8c.html#a5cfae0cf23f4e333c81a5a87c00c887e" title="TWI_get_status" alt="" coords="157,56,272,83"/>
+<area shape="rect" id="node4" href="$twi_8c.html#a880902268847e55c40289924b7924889" title="TWI_set" alt="" coords="179,107,251,133"/>
+<area shape="rect" id="node5" href="$twi_8c.html#a73cf27dbed444d865d6927ee9d426dc6" title="TWI_restart" alt="" coords="169,157,260,184"/>
+<area shape="rect" id="node6" href="$twi_8c.html#ad92b7166e0c4a38fc093d211347bd7db" title="TWI_get_nack" alt="" coords="161,208,268,235"/>
+<area shape="rect" id="node7" href="$twi_8c.html#aa6e5ad7edaa886c200aa971ff32c82fa" title="TWI_stop" alt="" coords="175,259,254,285"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="RTC_init" name="RTC_init">
+<area shape="rect" id="node2" href="$debug_8h.html#a9c820e95af19999d7193325e31de4672" title="debug_print" alt="" coords="128,5,217,32"/>
+<area shape="rect" id="node5" href="$twi_8h.html#a664c16d4fda88f5d944846937e7040d5" title="TWI_init" alt="" coords="137,56,208,83"/>
+<area shape="rect" id="node3" href="$usart_8h.html#a10ffb84489ffa558957478db64fea022" title="USART0_print" alt="" coords="265,31,372,57"/>
+<area shape="rect" id="node4" href="$usart_8c.html#a74e0069ed27a738a80035a24df80bdc4" title="USART0_set" alt="" coords="420,31,520,57"/>
+</map>

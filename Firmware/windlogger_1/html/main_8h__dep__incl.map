@@ -1,0 +1,13 @@
+<map id="lib/main.h" name="lib/main.h">
+<area shape="rect" id="node2" href="$config_8c.html" title="Brief description of file. " alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node3" href="$debug_8c.html" title="Brief description of file. " alt="" coords="120,80,211,107"/>
+<area shape="rect" id="node4" href="$eeprom__manage_8c.html" title="Manage the Logger struct read and write on the internal eeprom. " alt="" coords="235,80,386,107"/>
+<area shape="rect" id="node5" href="$emonLib_8c.html" title="src/emonLib.c" alt="" coords="411,80,515,107"/>
+<area shape="rect" id="node6" href="$fsm_8c.html" title="Brief description of file. " alt="" coords="539,80,616,107"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="Brief This is the main file program. " alt="" coords="640,80,723,107"/>
+<area shape="rect" id="node8" href="$pcf8563_8c.html" title="Brief description of file. " alt="" coords="747,80,848,107"/>
+<area shape="rect" id="node9" href="$sensors_8c.html" title="Brief description of file. " alt="" coords="872,80,973,107"/>
+<area shape="rect" id="node10" href="$time_8c.html" title="Brief description of file. " alt="" coords="997,80,1077,107"/>
+<area shape="rect" id="node11" href="$twi_8c.html" title="Atmega2560 twi driver. " alt="" coords="1101,80,1173,107"/>
+<area shape="rect" id="node12" href="$usart_8c.html" title="uart lib for the atmega 328p. " alt="" coords="1198,80,1282,107"/>
+</map>
