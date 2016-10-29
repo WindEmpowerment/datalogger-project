@@ -1,13 +1,6 @@
-# HARDWARE
-Hardware oraganisation
-
-2 cards and modules 
+# HARDWARE ORGANISATION
+Here are hardware's files for the windlogger project.
 
 ## BLOCK DIAGRAM
-![windlogger shield block diagram](/Hardware/diagram.png)
+![windlogger project block diagram](/Hardware/diagram.svg)
 
-## Todo list
-- chose the componants
-- update the BOM
-- route the board
-- test
