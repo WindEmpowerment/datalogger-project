@@ -1,5 +1,0 @@
-<map id="state_idle" name="state_idle">
-<area shape="rect" id="node2" href="$debug_8h.html#a9c820e95af19999d7193325e31de4672" title="debug_print" alt="" coords="132,5,221,32"/>
-<area shape="rect" id="node3" href="$usart_8h.html#a10ffb84489ffa558957478db64fea022" title="USART0_print" alt="" coords="269,5,376,32"/>
-<area shape="rect" id="node4" href="$usart_8c.html#a74e0069ed27a738a80035a24df80bdc4" title="USART0_set" alt="" coords="424,5,524,32"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="RTC_update_reg" name="RTC_update_reg">
-<area shape="rect" id="node2" href="$twi_8h.html#a7499132577b2a63bd21a56fa51521e94" title="TWI_set_char" alt="" coords="175,81,279,108"/>
-<area shape="rect" id="node7" href="$pcf8563_8c.html#a99c06fab8d852eb5e835f048e67382e1" title="utoBCD" alt="" coords="192,132,261,159"/>
-<area shape="rect" id="node3" href="$twi_8c.html#a9b94cbc0da2704177ff879e94117a95a" title="TWI_start" alt="" coords="344,5,424,32"/>
-<area shape="rect" id="node4" href="$twi_8c.html#a5cfae0cf23f4e333c81a5a87c00c887e" title="TWI_get_status" alt="" coords="327,56,441,83"/>
-<area shape="rect" id="node5" href="$twi_8c.html#a880902268847e55c40289924b7924889" title="TWI_set" alt="" coords="348,107,420,133"/>
-<area shape="rect" id="node6" href="$twi_8c.html#aa6e5ad7edaa886c200aa971ff32c82fa" title="TWI_stop" alt="" coords="345,157,423,184"/>
-</map>

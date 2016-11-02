@@ -1,6 +1,0 @@
-<map id="debug_RTC_print_Time" name="debug_RTC_print_Time">
-<area shape="rect" id="node2" href="$debug_8h.html#a9c820e95af19999d7193325e31de4672" title="debug_print" alt="" coords="217,5,306,32"/>
-<area shape="rect" id="node5" href="$debug_8h.html#ae260ab13d9f22f3c0a186304e14176d8" title="debug_printu" alt="" coords="213,56,309,83"/>
-<area shape="rect" id="node3" href="$usart_8h.html#a10ffb84489ffa558957478db64fea022" title="USART0_print" alt="" coords="357,31,464,57"/>
-<area shape="rect" id="node4" href="$usart_8c.html#a74e0069ed27a738a80035a24df80bdc4" title="USART0_set" alt="" coords="512,31,612,57"/>
-</map>
