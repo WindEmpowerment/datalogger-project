@@ -9,7 +9,7 @@ Comment are insert in the schematic, open the kicad project or the pdf export to
 ![windlogger shield block diagram](/Hardware/shield/shield_bd.png)
 
 ## RENDER PREVIEW
-![windlogger shield render preview](/Hardware/shield/shield_preview.jpg)
+![windlogger shield render preview](/Hardware/shield/shield_pcb.png)
 
 ## Todo list
 - chose the componants
