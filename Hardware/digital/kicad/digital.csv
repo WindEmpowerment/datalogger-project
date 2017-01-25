@@ -1,0 +1,69 @@
+Title,
+Revision,1.0.0
+Date,2017-01-10
+Generated,mar. 24 janv. 2017 04:27:49 CET
+Company,ALEEA
+Comment 1,LONGUET Gilles
+Comment 2,AGPL3
+Comment 3,
+Comment 4,
+Total Parts,93
+Total Unique Parts,48
+
+
+
+Ref,Qty,Value,Footprint,Family,Part,
+C2 C3 C5 C4 C6 C10 C11 C12 C9 C16 C17 C18 C19 C15 C30 C26 C1 ,17,100nF,Capacitors_ThroughHole:C_Rect_L7_W2.5_P5, , 
+C7 C8 ,2,18p,Capacitors_ThroughHole:C_Rect_L7_W2.5_P5, , 
+C13 C14 ,2,12.5p,Capacitors_ThroughHole:C_Rect_L7_W2.5_P5, , 
+C20 ,1,120uF,Capacitors_ThroughHole:C_Rect_L7_W2.5_P5, , 
+C23 C27 C25 C32 C33 ,5,120uF,Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5, , 
+C22 ,1,270pF,Capacitors_ThroughHole:C_Rect_L7_W2.5_P5, , 
+C21 ,1,1nF,Capacitors_ThroughHole:C_Rect_L7_W2.5_P5, , 
+D1 D2 D3 ,3,Led_Small,LEDs:LED-3MM, , 
+D6 D7 D8 D9 D5 D4 ,6,EGP20A,Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10, , 
+D10 D11 ,2,SR5100,Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10, , 
+F1 ,1,F_Small,Fuse_Holders_and_Fuses:Fuse_TE5_Littlefuse-395Series, , 
+IC1 ,1,ATMEGA1284P-A,Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm, , 
+J2 ,1,Micro_SD,digital:HIROSE-MICROSD-DM3AT-SF,Connector,-
+J1 ,1,CONN-SMA-5-1814400-1,digital:conn-SMA_TE-5-1814400-1, , 
+L1 ,1,L_Double,digital:DRQ_127, , 
+P6 P8 P9 P5 ,4,hole,Socket_Arduino_Mega:Arduino_1pin, , 
+P3 ,1,ISP,Socket_Strips:Socket_Strip_Straight_2x03, , 
+P7 ,1,USART0,Pin_Headers:Pin_Header_Straight_1x06, , 
+P4 ,1,CONN_02X05,Pin_Headers:Pin_Header_Straight_2x05, , 
+P1 P2 ,2,CONN_01X14,Socket_Strips:Socket_Strip_Straight_1x14, , 
+P11 ,1,USB_OTG,Connect:USB_Micro-B_10103594-0001LF, , 
+P12 P13 ,2,CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02, , 
+POWER_SOURCE1 ,1,CONN_01X04,Socket_Strips:Socket_Strip_Straight_1x04, , 
+PWM1 ,1,CONN_01X10,Socket_Strips:Socket_Strip_Straight_1x10, , 
+Power1 Analog1 PWM2 Communication1 ,4,CONN_01X08,Socket_Strips:Socket_Strip_Straight_1x08, , 
+Q1 ,1,NTR4501N,TO_SOT_Packages_SMD:SOT-23_Handsoldering, , 
+Q3 Q2 ,2,FQB22P10,digital:D2PAK_2pins, , 
+R3 ,1,R,Discret:R3-LARGE_PADS, , 
+R1 R2 ,2,1k,Discret:R3-LARGE_PADS, , 
+R4 R5 R12 ,3,10k,Discret:R3-LARGE_PADS, , 
+R6 R17 R16 ,3,100k,Discret:R3-LARGE_PADS, , 
+R8 ,1,100,Discret:R3-LARGE_PADS, , 
+R7 ,1,470k,Discret:R3-LARGE_PADS, , 
+R11 ,1,30.1k,Discret:R3-LARGE_PADS, , 
+R10 ,1,0.02,Discret:R4-LARGE_PADS, , 
+R9 ,1,82.5k,Discret:R3-LARGE_PADS, , 
+SW1 SW2 ,2,button-touch-6x6mm,digital:button-touch-6x6mm, , 
+U1 ,1,FT232RL,Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm, , 
+U2 ,1,EPM3064A-44TQFP,Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm, , 
+U3 ,1,RFM69CW,Hope_RFM:RFM69CW, , 
+U4 ,1,SIM800L,digital:GPRS-SIM80L-smaller, , 
+U5 ,1,huzzah,digital:adafruit-huzzah, , 
+U7 ,1,LM1085IS-3.3/NOPB,digital:D2PAK_3pins, , 
+U8 ,1,LM358,Housings_DIP:DIP-8_W7.62mm_LongPads, , 
+U6 ,1,LM3485,Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm, , 
+X2 ,1,CRYSTAL,Crystals:Crystal_Round_Horizontal_3mm_BigPad, , 
+X1 ,1,16M,Crystals:Crystal_HC49-U_Vertical, , 
+X3 ,1,32MHz,digital:oscillator-7x5mm, , 
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated mar. 24 janv. 2017 04:27:49 CET

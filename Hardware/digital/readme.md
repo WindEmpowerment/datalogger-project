@@ -3,7 +3,8 @@ This board contains all the needs to use an Atmega1284p like an Arduino. But bec
 A sd card module and a transmitter module can be add too. This permit to collect data on the SD card and/or send it by wifi or gprs.
 
 ## BLOCK DIAGRAM
-![windlogger digital block diagram](/Hardware/digital/digital_bd.png)
+
+todo
 
 ## RENDER PREVIEW
 ![windlogger digital render preview](/Hardware/digital/digital_preview.jpg)

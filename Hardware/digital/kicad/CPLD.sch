@@ -1,0 +1,467 @@
+EESchema Schematic File Version 2
+LIBS:ftdi
+LIBS:digital-a-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Hope_RFM
+LIBS:digital
+LIBS:altera
+LIBS:Oscillators
+LIBS:IHE
+LIBS:conn-te
+LIBS:dc-dc
+LIBS:digital-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title "Windlogger digital"
+Date "2017-01-24"
+Rev "1.0.0"
+Comp "ALEEA"
+Comment1 "LONGUET Gilles"
+Comment2 "AGPL3"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L EPM3064A-44TQFP U2
+U 1 1 587534BC
+P 6500 3700
+F 0 "U2" H 6500 3700 60  0000 C CNN
+F 1 "EPM3064A-44TQFP" H 5650 5050 60  0000 C CNN
+F 2 "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm" H 9150 4050 60  0001 C CNN
+F 3 "" H 9150 4050 60  0000 C CNN
+	1    6500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR028
+U 1 1 5876C2E5
+P 6450 2150
+F 0 "#PWR028" H 6450 2000 50  0001 C CNN
+F 1 "+3.3V" H 6450 2290 50  0000 C CNN
+F 2 "" H 6450 2150 50  0000 C CNN
+F 3 "" H 6450 2150 50  0000 C CNN
+	1    6450 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2350 6350 2225
+Wire Wire Line
+	6350 2225 6650 2225
+Wire Wire Line
+	6650 2225 6650 2350
+Wire Wire Line
+	6450 2150 6450 2350
+Connection ~ 6450 2225
+Wire Wire Line
+	6550 2350 6550 2225
+Connection ~ 6550 2225
+$Comp
+L GND #PWR029
+U 1 1 5876C5B6
+P 6450 5125
+F 0 "#PWR029" H 6450 4875 50  0001 C CNN
+F 1 "GND" H 6450 4975 50  0000 C CNN
+F 2 "" H 6450 5125 50  0000 C CNN
+F 3 "" H 6450 5125 50  0000 C CNN
+	1    6450 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5000 6250 5075
+Wire Wire Line
+	6250 5075 6750 5075
+Wire Wire Line
+	6750 5075 6750 5000
+Wire Wire Line
+	6650 5000 6650 5075
+Connection ~ 6650 5075
+Wire Wire Line
+	6550 5000 6550 5075
+Connection ~ 6550 5075
+Wire Wire Line
+	6450 5000 6450 5125
+Connection ~ 6450 5075
+Wire Wire Line
+	6350 5000 6350 5075
+Connection ~ 6350 5075
+$Comp
+L GND #PWR030
+U 1 1 5876CE48
+P 5050 3350
+F 0 "#PWR030" H 5050 3100 50  0001 C CNN
+F 1 "GND" H 5050 3200 50  0000 C CNN
+F 2 "" H 5050 3350 50  0000 C CNN
+F 3 "" H 5050 3350 50  0000 C CNN
+	1    5050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3350 5050 3300
+Wire Wire Line
+	5750 2800 5050 2800
+$Comp
+L R R5
+U 1 1 5876CEB7
+P 5050 2575
+F 0 "R5" V 5130 2575 50  0000 C CNN
+F 1 "10k" V 5050 2575 50  0000 C CNN
+F 2 "Discret:R3-LARGE_PADS" V 4980 2575 50  0001 C CNN
+F 3 "" H 5050 2575 50  0000 C CNN
+	1    5050 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2725 5050 3000
+Connection ~ 5050 2800
+$Comp
+L +3.3V #PWR031
+U 1 1 5876CF52
+P 5050 2375
+F 0 "#PWR031" H 5050 2225 50  0001 C CNN
+F 1 "+3.3V" H 5050 2515 50  0000 C CNN
+F 2 "" H 5050 2375 50  0000 C CNN
+F 3 "" H 5050 2375 50  0000 C CNN
+	1    5050 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2375 5050 2425
+Wire Wire Line
+	5475 2700 5750 2700
+Wire Wire Line
+	5475 2900 5750 2900
+Wire Wire Line
+	5475 3000 5750 3000
+Wire Wire Line
+	5475 3200 5750 3200
+Wire Wire Line
+	5475 3300 5750 3300
+Wire Wire Line
+	5475 3400 5750 3400
+Wire Wire Line
+	5475 3500 5750 3500
+Wire Wire Line
+	5475 4150 5750 4150
+Wire Wire Line
+	5475 4250 5750 4250
+Wire Wire Line
+	5475 4350 5750 4350
+Wire Wire Line
+	5475 4450 5750 4450
+Wire Wire Line
+	5475 4550 5750 4550
+Wire Wire Line
+	5475 4650 5750 4650
+Wire Wire Line
+	7250 3300 7525 3300
+Wire Wire Line
+	7250 3400 7525 3400
+Wire Wire Line
+	7250 3500 7525 3500
+Wire Wire Line
+	7250 3600 7525 3600
+Wire Wire Line
+	7250 3700 7525 3700
+Wire Wire Line
+	7250 3800 7525 3800
+Wire Wire Line
+	7250 3900 7525 3900
+Wire Wire Line
+	7250 4150 7525 4150
+Wire Wire Line
+	7250 4250 7525 4250
+Wire Wire Line
+	7250 4350 7525 4350
+Wire Wire Line
+	7250 4450 7525 4450
+Wire Wire Line
+	7250 4550 7525 4550
+Wire Wire Line
+	7250 4650 7525 4650
+Wire Wire Line
+	7250 2600 7525 2600
+Wire Wire Line
+	7250 2700 7525 2700
+Wire Wire Line
+	7250 2800 7525 2800
+Wire Wire Line
+	7250 2900 7525 2900
+Wire Wire Line
+	7250 3000 7525 3000
+Wire Wire Line
+	7250 3100 7525 3100
+Text HLabel 5475 2900 0    60   Input ~ 0
+38
+Text HLabel 5475 3000 0    60   Input ~ 0
+40
+Wire Wire Line
+	5475 4050 5750 4050
+Text HLabel 5475 4050 0    60   BiDi ~ 0
+2
+Text HLabel 5475 4150 0    60   BiDi ~ 0
+3
+Text HLabel 5475 4250 0    60   BiDi ~ 0
+5
+Text HLabel 5475 4350 0    60   BiDi ~ 0
+6
+Text HLabel 5475 4450 0    60   BiDi ~ 0
+42
+Text HLabel 5475 4550 0    60   BiDi ~ 0
+43
+Text HLabel 5475 4650 0    60   BiDi ~ 0
+44
+Text HLabel 7525 4150 2    60   BiDi ~ 0
+8
+Text HLabel 7525 4250 2    60   BiDi ~ 0
+10
+Text HLabel 7525 4350 2    60   BiDi ~ 0
+12
+Text HLabel 7525 4450 2    60   BiDi ~ 0
+13
+Text HLabel 7525 4550 2    60   BiDi ~ 0
+14
+Text HLabel 7525 4650 2    60   BiDi ~ 0
+15
+Text HLabel 7525 3300 2    60   BiDi ~ 0
+25
+Text HLabel 7525 3400 2    60   BiDi ~ 0
+23
+Text HLabel 7525 3500 2    60   BiDi ~ 0
+22
+Text HLabel 7525 3600 2    60   BiDi ~ 0
+21
+Text HLabel 7525 3700 2    60   BiDi ~ 0
+20
+Text HLabel 7525 3800 2    60   BiDi ~ 0
+19
+Text HLabel 7525 3900 2    60   BiDi ~ 0
+18
+Text HLabel 7525 2600 2    60   BiDi ~ 0
+35
+Text HLabel 7525 2700 2    60   BiDi ~ 0
+34
+Text HLabel 7525 2800 2    60   BiDi ~ 0
+33
+Text HLabel 7525 2900 2    60   BiDi ~ 0
+31
+Text HLabel 7525 3000 2    60   BiDi ~ 0
+28
+Text HLabel 7525 3100 2    60   BiDi ~ 0
+27
+Text HLabel 5475 3200 0    60   Input ~ 0
+TDI
+Text HLabel 5475 3300 0    60   Input ~ 0
+TMS
+Text HLabel 5475 3400 0    60   Input ~ 0
+TCK
+Text HLabel 5475 3500 0    60   Output ~ 0
+TDO
+$Comp
+L C C16
+U 1 1 5876E724
+P 1975 4375
+F 0 "C16" H 2000 4475 50  0000 L CNN
+F 1 "100nF" H 2000 4275 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L7_W2.5_P5" H 2013 4225 50  0001 C CNN
+F 3 "" H 1975 4375 50  0000 C CNN
+	1    1975 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C17
+U 1 1 5876E780
+P 2375 4375
+F 0 "C17" H 2400 4475 50  0000 L CNN
+F 1 "100nF" H 2400 4275 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L7_W2.5_P5" H 2413 4225 50  0001 C CNN
+F 3 "" H 2375 4375 50  0000 C CNN
+	1    2375 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 5876E7CB
+P 2750 4375
+F 0 "C18" H 2775 4475 50  0000 L CNN
+F 1 "100nF" H 2775 4275 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L7_W2.5_P5" H 2788 4225 50  0001 C CNN
+F 3 "" H 2750 4375 50  0000 C CNN
+	1    2750 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C19
+U 1 1 5876E819
+P 3125 4375
+F 0 "C19" H 3150 4475 50  0000 L CNN
+F 1 "100nF" H 3150 4275 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L7_W2.5_P5" H 3163 4225 50  0001 C CNN
+F 3 "" H 3125 4375 50  0000 C CNN
+	1    3125 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR032
+U 1 1 5876E89C
+P 1975 4125
+F 0 "#PWR032" H 1975 3975 50  0001 C CNN
+F 1 "+3.3V" H 1975 4265 50  0000 C CNN
+F 2 "" H 1975 4125 50  0000 C CNN
+F 3 "" H 1975 4125 50  0000 C CNN
+	1    1975 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR033
+U 1 1 5876E8BE
+P 1975 4650
+F 0 "#PWR033" H 1975 4400 50  0001 C CNN
+F 1 "GND" H 1975 4500 50  0000 C CNN
+F 2 "" H 1975 4650 50  0000 C CNN
+F 3 "" H 1975 4650 50  0000 C CNN
+	1    1975 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1975 4125 1975 4225
+Wire Wire Line
+	1975 4225 3125 4225
+Connection ~ 2375 4225
+Connection ~ 2750 4225
+Wire Wire Line
+	1975 4525 1975 4650
+Wire Wire Line
+	1975 4525 3125 4525
+Connection ~ 2375 4525
+Connection ~ 2750 4525
+Connection ~ 1975 4225
+Connection ~ 1975 4525
+$Comp
+L TCXO_DFAS11 X3
+U 1 1 58771ABF
+P 2450 2675
+F 0 "X3" H 2450 2975 50  0000 C CNN
+F 1 "32MHz" H 2450 2675 50  0000 C CNN
+F 2 "digital:oscillator-7x5mm" H 2450 2675 50  0001 C CNN
+F 3 "" H 2450 2675 50  0000 C CNN
+	1    2450 2675
+	1    0    0    -1  
+$EndComp
+Text Label 5475 2700 0    60   ~ 0
+37
+Wire Wire Line
+	3325 2525 3150 2525
+Text Label 3325 2525 2    60   ~ 0
+37
+$Comp
+L GND #PWR034
+U 1 1 5877297D
+P 3225 2900
+F 0 "#PWR034" H 3225 2650 50  0001 C CNN
+F 1 "GND" H 3225 2750 50  0000 C CNN
+F 2 "" H 3225 2900 50  0000 C CNN
+F 3 "" H 3225 2900 50  0000 C CNN
+	1    3225 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 2900 3225 2825
+Wire Wire Line
+	3225 2825 3150 2825
+$Comp
+L +3.3V #PWR035
+U 1 1 587729F7
+P 1700 2450
+F 0 "#PWR035" H 1700 2300 50  0001 C CNN
+F 1 "+3.3V" H 1700 2590 50  0000 C CNN
+F 2 "" H 1700 2450 50  0000 C CNN
+F 3 "" H 1700 2450 50  0000 C CNN
+	1    1700 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2450 1700 2825
+Wire Wire Line
+	1550 2525 1750 2525
+$Comp
+L C C15
+U 1 1 58772A7A
+P 1550 2675
+F 0 "C15" H 1300 2575 50  0000 L CNN
+F 1 "100nF" H 1575 2575 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L7_W2.5_P5" H 1588 2525 50  0001 C CNN
+F 3 "" H 1550 2675 50  0000 C CNN
+	1    1550 2675
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 2525
+$Comp
+L GND #PWR036
+U 1 1 58772B02
+P 1550 2875
+F 0 "#PWR036" H 1550 2625 50  0001 C CNN
+F 1 "GND" H 1550 2725 50  0000 C CNN
+F 2 "" H 1550 2875 50  0000 C CNN
+F 3 "" H 1550 2875 50  0000 C CNN
+	1    1550 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2875 1550 2825
+Wire Wire Line
+	1700 2825 1750 2825
+$Comp
+L button-touch-6x6mm SW2
+U 1 1 5885C525
+P 4975 3150
+F 0 "SW2" H 4980 2980 50  0000 C CNN
+F 1 "button-touch-6x6mm" H 5010 3330 50  0000 C CNN
+F 2 "digital:button-touch-6x6mm" H 4300 3550 50  0001 C CNN
+F 3 "" H 4300 3550 50  0000 C CNN
+	1    4975 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 3000 4900 2950
+Wire Wire Line
+	4900 2950 5050 2950
+Connection ~ 5050 2950
+Wire Wire Line
+	4900 3300 4900 3325
+Wire Wire Line
+	4900 3325 5050 3325
+Connection ~ 5050 3325
+Text Notes 4675 5200 0    60   ~ 0
+enable cablé sur micro
+$EndSCHEMATC

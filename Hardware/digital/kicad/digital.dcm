@@ -1,0 +1,49 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CONN-SMA-5-1814400-1
+D BNC, female, right angle, panel mount, through hole
+$ENDCMP
+#
+$CMP EPM3064A-44TQFP
+D EPM3064A CPLD from the MAX3000A series of CPLDs in 44pin TQFP package
+K altera, cpld, max3000a
+F https://www.altera.com/en_US/pdfs/literature/ds/m3000a.pdf
+$ENDCMP
+#
+$CMP FT232RL
+D USB to Serial Interface, SSOP-28
+K USB Serial
+F http://www.ftdichip.com/Products/ICs/FT232RL.htm
+$ENDCMP
+#
+$CMP LM1084IS-3.3/NOPB
+D LM1084IS-3.3, 5A 27V Linear Regulator, Fixed Output 3.3V, TO-263
+K Voltage Regulator Adjustable 5A Positive
+F http://www.ti.com/lit/ds/symlink/lm1084.pdf
+$ENDCMP
+#
+$CMP LM1084IS-5.0/NOPB
+D LM1084IS-5.0, 5A 27V Linear Regulator, Fixed Output 5.0V, TO-263
+K Voltage Regulator 5A Positive
+F http://www.ti.com/lit/ds/symlink/lm1084.pdf
+$ENDCMP
+#
+$CMP L_Double
+D Inductor
+$ENDCMP
+#
+$CMP L_Small
+D Inductor
+$ENDCMP
+#
+$CMP Micro_SD
+D Micro SD card connector
+K SD
+$ENDCMP
+#
+$CMP USB_OTG
+D micro/mini connector
+K USB USB_OTG USB_mini USB_micro
+$ENDCMP
+#
+#End Doc Library

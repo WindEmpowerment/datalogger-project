@@ -1,4 +1,4 @@
 (fp_lib_table
   (lib (name Socket_Arduino_Mega)(type KiCad)(uri "$(KIPRJMOD)/Socket_Arduino_Mega.pretty")(options "")(descr ""))
-  (lib (name Hope_RFM)(type KiCad)(uri /home/gilou/Documents/logiciels/kicad_lib/Hope_RFM.pretty)(options "")(descr ""))
+  (lib (name digital)(type KiCad)(uri "$(KIPRJMOD)/digital.pretty")(options "")(descr ""))
 )

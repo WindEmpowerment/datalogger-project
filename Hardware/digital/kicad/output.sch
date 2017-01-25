@@ -1,0 +1,581 @@
+EESchema Schematic File Version 2
+LIBS:ftdi
+LIBS:digital-a-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Hope_RFM
+LIBS:digital
+LIBS:altera
+LIBS:Oscillators
+LIBS:IHE
+LIBS:conn-te
+LIBS:dc-dc
+LIBS:digital-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title "Windlogger digital"
+Date "2017-01-24"
+Rev "1.0.0"
+Comp "ALEEA"
+Comment1 "LONGUET Gilles"
+Comment2 "AGPL3"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 9050 750  0    60   ~ 0
+rfm69cw on spi 3.3V
+$Comp
+L RFM69CW U3
+U 1 1 5805B811
+P 8900 1900
+F 0 "U3" H 8900 1500 60  0000 C CNN
+F 1 "RFM69CW" H 8850 2450 60  0000 C CNN
+F 2 "Hope_RFM:RFM69CW" H 8900 1900 60  0001 C CNN
+F 3 "" H 8900 1900 60  0000 C CNN
+	1    8900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1500 8250 1500
+Wire Wire Line
+	7800 1600 8250 1600
+$Comp
+L GND #PWR037
+U 1 1 5805BB01
+P 8150 2200
+F 0 "#PWR037" H 8150 1950 50  0001 C CNN
+F 1 "GND" H 8150 2050 50  0000 C CNN
+F 2 "" H 8150 2200 50  0000 C CNN
+F 3 "" H 8150 2200 50  0000 C CNN
+	1    8150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2200 8150 2100
+Wire Wire Line
+	8150 2100 8250 2100
+Text Label 7800 1500 0    60   ~ 0
+MISO_3V3
+Text Label 7800 1600 0    60   ~ 0
+RF_IRQ_3V3
+Wire Wire Line
+	9500 1500 10050 1500
+Wire Wire Line
+	10050 1600 9500 1600
+Wire Wire Line
+	10050 1700 9500 1700
+Text Label 10050 1500 2    60   ~ 0
+RF_CS_3V3
+Text Label 10050 1600 2    60   ~ 0
+SCLK_3V3
+Text Label 10050 1700 2    60   ~ 0
+MOSI_3V3
+NoConn ~ 8250 1700
+NoConn ~ 8250 1800
+NoConn ~ 8250 1900
+NoConn ~ 8250 2000
+NoConn ~ 9500 1800
+Wire Wire Line
+	9500 1900 9575 1900
+Wire Wire Line
+	9575 1900 9575 2250
+$Comp
+L GND #PWR038
+U 1 1 5805C11A
+P 9575 2250
+F 0 "#PWR038" H 9575 2000 50  0001 C CNN
+F 1 "GND" H 9575 2100 50  0000 C CNN
+F 2 "" H 9575 2250 50  0000 C CNN
+F 3 "" H 9575 2250 50  0000 C CNN
+	1    9575 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9625 2000 9500 2000
+Wire Wire Line
+	9625 1075 9625 2000
+Text Notes 4350 5575 2    60   ~ 0
+Huzzah esp connector 5V level tolerent
+Text Notes 8575 5050 0    60   ~ 0
+GPRS module
+NoConn ~ 9925 5675
+NoConn ~ 9925 5775
+NoConn ~ 9925 5875
+NoConn ~ 9925 5975
+NoConn ~ 9925 6075
+NoConn ~ 9925 6175
+$Comp
+L GND #PWR039
+U 1 1 587270D1
+P 8450 6175
+F 0 "#PWR039" H 8450 5925 50  0001 C CNN
+F 1 "GND" H 8450 6025 50  0000 C CNN
+F 2 "" H 8450 6175 50  0000 C CNN
+F 3 "" H 8450 6175 50  0000 C CNN
+	1    8450 6175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 6175 8450 6075
+Wire Wire Line
+	8450 6075 8525 6075
+$Comp
+L CP C20
+U 1 1 587273CC
+P 7725 5200
+F 0 "C20" H 7750 5300 50  0000 L CNN
+F 1 "120uF" H 7750 5100 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 7763 5050 50  0001 C CNN
+F 3 "" H 7725 5200 50  0000 C CNN
+	1    7725 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7725 4900 7725 5050
+Connection ~ 7725 4975
+$Comp
+L GND #PWR040
+U 1 1 58727531
+P 7725 5475
+F 0 "#PWR040" H 7725 5225 50  0001 C CNN
+F 1 "GND" H 7725 5325 50  0000 C CNN
+F 2 "" H 7725 5475 50  0000 C CNN
+F 3 "" H 7725 5475 50  0000 C CNN
+	1    7725 5475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7725 5475 7725 5350
+Wire Wire Line
+	8525 5975 7825 5975
+Wire Wire Line
+	8525 5875 7825 5875
+Wire Wire Line
+	8525 5775 7825 5775
+Text Label 7825 5975 0    60   ~ 0
+GPRS_TX_2V8
+Text Label 7825 5875 0    60   ~ 0
+GPRS_RX_2V8
+Text Label 7825 5775 0    60   ~ 0
+GPRS_reset_2V8
+$Comp
+L SIM800L U4
+U 1 1 5874B600
+P 9225 5825
+F 0 "U4" H 8775 5325 60  0000 C CNN
+F 1 "SIM800L" H 8925 6325 60  0000 C CNN
+F 2 "digital:GPRS-SIM80L-smaller" H 9225 5825 60  0001 C CNN
+F 3 "" H 9225 5825 60  0000 C CNN
+	1    9225 5825
+	1    0    0    -1  
+$EndComp
+Text Notes 4025 1325 0    60   ~ 0
+SD card SPI 3.3V
+Text Notes 7725 6125 0    60   ~ 0
+2.8V interface
+$Comp
+L R R6
+U 1 1 58756547
+P 9725 1275
+F 0 "R6" V 9805 1275 50  0000 C CNN
+F 1 "100k" V 9725 1275 50  0000 C CNN
+F 2 "Discret:R3-LARGE_PADS" V 9655 1275 50  0001 C CNN
+F 3 "" H 9725 1275 50  0000 C CNN
+	1    9725 1275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9725 1425 9725 1500
+Connection ~ 9725 1500
+Wire Wire Line
+	9725 1125 9725 1100
+Wire Wire Line
+	9725 1100 9625 1100
+Connection ~ 9625 1100
+Text Notes 10200 1725 0    60   ~ 0
+SMA antenna \nconnector 433 MHz
+$Comp
+L GND #PWR041
+U 1 1 58756BE4
+P 10100 2375
+F 0 "#PWR041" H 10100 2125 50  0001 C CNN
+F 1 "GND" H 10100 2225 50  0000 C CNN
+F 2 "" H 10100 2375 50  0000 C CNN
+F 3 "" H 10100 2375 50  0000 C CNN
+	1    10100 2375
+	1    0    0    -1  
+$EndComp
+Text Notes 9200 3100 0    60   ~ 0
+OK
+$Comp
+L R R8
+U 1 1 58753060
+P 10400 5600
+F 0 "R8" V 10480 5600 50  0000 C CNN
+F 1 "100" V 10400 5600 50  0000 C CNN
+F 2 "Discret:R3-LARGE_PADS" V 10330 5600 50  0001 C CNN
+F 3 "" H 10400 5600 50  0000 C CNN
+	1    10400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR042
+U 1 1 58753262
+P 10400 6300
+F 0 "#PWR042" H 10400 6050 50  0001 C CNN
+F 1 "GND" H 10400 6150 50  0000 C CNN
+F 2 "" H 10400 6300 50  0000 C CNN
+F 3 "" H 10400 6300 50  0000 C CNN
+	1    10400 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR043
+U 1 1 587537DE
+P 10400 5000
+F 0 "#PWR043" H 10400 4850 50  0001 C CNN
+F 1 "+3.3V" H 10400 5140 50  0000 C CNN
+F 2 "" H 10400 5000 50  0000 C CNN
+F 3 "" H 10400 5000 50  0000 C CNN
+	1    10400 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 5000 10400 5125
+Wire Wire Line
+	10400 5325 10400 5450
+Wire Wire Line
+	10400 5750 10400 5800
+Wire Wire Line
+	10400 6200 10400 6300
+Wire Wire Line
+	10100 5175 10100 6000
+Wire Wire Line
+	10100 5175 8525 5175
+Wire Wire Line
+	8525 5175 8525 5575
+Text Label 8525 5175 0    60   ~ 0
+NETLIGHT
+$Comp
+L +BATT #PWR044
+U 1 1 58755363
+P 7725 4900
+F 0 "#PWR044" H 7725 4750 50  0001 C CNN
+F 1 "+BATT" H 7725 5040 50  0000 C CNN
+F 2 "" H 7725 4900 50  0000 C CNN
+F 3 "" H 7725 4900 50  0000 C CNN
+	1    7725 4900
+	1    0    0    -1  
+$EndComp
+Text Notes 9625 4500 0    60   ~ 0
+ok
+$Comp
+L huzzah U5
+U 1 1 5875CD96
+P 3475 6425
+F 0 "U5" H 2975 5725 60  0000 C CNN
+F 1 "huzzah" H 3075 7075 60  0000 C CNN
+F 2 "digital:adafruit-huzzah" H 3475 6425 60  0001 C CNN
+F 3 "" H 3475 6425 60  0000 C CNN
+	1    3475 6425
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR045
+U 1 1 5875CF72
+P 2400 6825
+F 0 "#PWR045" H 2400 6675 50  0001 C CNN
+F 1 "+5V" H 2400 6965 50  0000 C CNN
+F 2 "" H 2400 6825 50  0000 C CNN
+F 3 "" H 2400 6825 50  0000 C CNN
+	1    2400 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2725 6825 2400 6825
+$Comp
+L GND #PWR046
+U 1 1 5875D04A
+P 2675 7075
+F 0 "#PWR046" H 2675 6825 50  0001 C CNN
+F 1 "GND" H 2675 6925 50  0000 C CNN
+F 2 "" H 2675 7075 50  0000 C CNN
+F 3 "" H 2675 7075 50  0000 C CNN
+	1    2675 7075
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR047
+U 1 1 5875D080
+P 4325 7100
+F 0 "#PWR047" H 4325 6850 50  0001 C CNN
+F 1 "GND" H 4325 6950 50  0000 C CNN
+F 2 "" H 4325 7100 50  0000 C CNN
+F 3 "" H 4325 7100 50  0000 C CNN
+	1    4325 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 7100 4325 6975
+Wire Wire Line
+	4325 6975 4175 6975
+Wire Wire Line
+	2725 6925 2675 6925
+Wire Wire Line
+	2675 6925 2675 7075
+Wire Wire Line
+	5050 6075 4175 6075
+Wire Wire Line
+	5050 6175 4175 6175
+Wire Wire Line
+	1750 6025 2725 6025
+Text Label 1750 6025 0    60   ~ 0
+huzzah_reset_3V3
+Wire Wire Line
+	1725 6225 2725 6225
+Text Label 1725 6225 0    60   ~ 0
+huzzah_enable_3V3
+Text Label 5350 6875 2    60   ~ 0
+huzzah_LDO_enable_3V3
+Wire Wire Line
+	4175 6875 5350 6875
+NoConn ~ 2725 6725
+NoConn ~ 4175 6275
+NoConn ~ 4175 6375
+NoConn ~ 4175 6475
+NoConn ~ 4175 6575
+NoConn ~ 4175 6775
+NoConn ~ 4175 6675
+NoConn ~ 2725 6625
+NoConn ~ 2725 6525
+NoConn ~ 2725 6425
+NoConn ~ 2725 6325
+NoConn ~ 2725 6125
+$Comp
+L Micro_SD J2
+U 1 1 587638E8
+P 4625 2400
+F 0 "J2" H 4025 3200 60  0000 L BNB
+F 1 "Micro_SD" H 4025 1700 40  0000 L TNN
+F 2 "digital:HIROSE-MICROSD-DM3AT-SF" H 4025 1500 40  0001 L CNN
+F 3 "" V 4585 2340 60  0001 C CNN
+F 4 "-" H 4025 3300 40  0001 L BNN "Part"
+F 5 "Connector" H 4025 3400 40  0001 L BNN "Family"
+	1    4625 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1750 3925 1750
+$Comp
+L R R7
+U 1 1 58763FEA
+P 3325 1500
+F 0 "R7" V 3405 1500 50  0000 C CNN
+F 1 "470k" V 3325 1500 50  0000 C CNN
+F 2 "Discret:R3-LARGE_PADS" V 3255 1500 50  0001 C CNN
+F 3 "" H 3325 1500 50  0000 C CNN
+	1    3325 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR048
+U 1 1 5876412D
+P 3325 1300
+F 0 "#PWR048" H 3325 1150 50  0001 C CNN
+F 1 "+5V" H 3325 1440 50  0000 C CNN
+F 2 "" H 3325 1300 50  0000 C CNN
+F 3 "" H 3325 1300 50  0000 C CNN
+	1    3325 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3925 2150 3025 2150
+Text Label 3025 2150 0    60   ~ 0
+MISO_3V3
+Text Label 3025 2550 0    60   ~ 0
+MOSI_3V3
+Wire Wire Line
+	3925 2550 3025 2550
+Wire Wire Line
+	3925 2350 3025 2350
+Text Label 3025 2350 0    60   ~ 0
+SCLK_3V3
+Text Label 3025 2650 0    60   ~ 0
+SD_CS_3V3
+Wire Wire Line
+	3925 2650 3025 2650
+$Comp
+L GND #PWR049
+U 1 1 5876514C
+P 3800 3025
+F 0 "#PWR049" H 3800 2775 50  0001 C CNN
+F 1 "GND" H 3800 2875 50  0000 C CNN
+F 2 "" H 3800 3025 50  0000 C CNN
+F 3 "" H 3800 3025 50  0000 C CNN
+	1    3800 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2950 3925 2950
+Wire Wire Line
+	3800 1850 3800 3025
+NoConn ~ 3925 2050
+NoConn ~ 3925 2750
+Wire Wire Line
+	3800 1850 3925 1850
+Connection ~ 3800 2950
+Wire Wire Line
+	3725 1625 3725 2450
+Wire Wire Line
+	3725 2450 3925 2450
+Wire Wire Line
+	3800 2250 3925 2250
+Connection ~ 3800 2250
+Wire Wire Line
+	3325 1750 3325 1650
+Connection ~ 3325 1750
+Wire Wire Line
+	3325 1350 3325 1300
+Text Label 2600 1750 0    60   ~ 0
+SD_CD_5V
+Wire Wire Line
+	8525 5675 8275 5675
+Wire Wire Line
+	8275 5675 8275 4975
+Wire Wire Line
+	8275 4975 7725 4975
+Text HLabel 7825 5775 0    60   Input ~ 0
+GPRS_reset_2V8
+Text HLabel 7825 5875 0    60   Input ~ 0
+GPRS_RX_2V8
+Text HLabel 7825 5975 0    60   Output ~ 0
+GPRS_TX_2V8
+Text HLabel 5350 6875 2    60   Input ~ 0
+huzzah_LDO_enable_3V3
+Text HLabel 5050 6175 2    60   Input ~ 0
+huzzah_RX_3V3
+Text Label 5050 6075 2    60   ~ 0
+huzzah_TX_3V3
+Text Label 5050 6175 2    60   ~ 0
+huzzah_RX_3V3
+Text HLabel 5050 6075 2    60   Output ~ 0
+huzzah_TX_3V3
+Text HLabel 1750 6025 0    60   Input ~ 0
+huzzah_reset_3V3
+Text HLabel 1725 6225 0    60   Input ~ 0
+huzzah_enable_3v3
+Text HLabel 2600 1750 0    60   Output ~ 0
+SD_CD_5V
+Text HLabel 3025 2150 0    60   Output ~ 0
+MISO_3V3
+Text HLabel 3025 2350 0    60   Input ~ 0
+SCLK_3V3
+Text HLabel 3025 2550 0    60   Input ~ 0
+MOSI_3V3
+Text HLabel 3025 2650 0    60   Input ~ 0
+SD_CS_3V3
+Text HLabel 7800 1600 0    60   Input ~ 0
+RF_IRQ_3V3
+Text HLabel 10050 1500 2    60   Input ~ 0
+RF_CS_3V3
+$Comp
+L CONN-SMA-5-1814400-1 J1
+U 1 1 58858181
+P 10200 2100
+F 0 "J1" H 10200 2300 50  0000 C CNN
+F 1 "CONN-SMA-5-1814400-1" H 10200 2200 50  0000 C CNN
+F 2 "digital:conn-SMA_TE-5-1814400-1" H 10200 2100 50  0001 C CNN
+F 3 "" H 10200 2100 50  0000 C CNN
+	1    10200 2100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2100 10100 2100
+Wire Wire Line
+	10100 2375 10100 2200
+Wire Wire Line
+	10100 2200 10150 2200
+Wire Wire Line
+	10150 2250 10100 2250
+Connection ~ 10100 2250
+Wire Wire Line
+	10100 2300 10150 2300
+Connection ~ 10100 2300
+Wire Wire Line
+	10150 2350 10100 2350
+Connection ~ 10100 2350
+$Comp
+L Q_NMOS_GSD Q1
+U 1 1 5885B395
+P 10300 6000
+F 0 "Q1" H 10600 6050 50  0000 R CNN
+F 1 "NTR4501N" H 10950 5950 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 10500 6100 50  0001 C CNN
+F 3 "" H 10300 6000 50  0000 C CNN
+	1    10300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR050
+U 1 1 58878826
+P 9625 1075
+F 0 "#PWR050" H 9625 925 50  0001 C CNN
+F 1 "+3.3V" H 9625 1215 50  0000 C CNN
+F 2 "" H 9625 1075 50  0000 C CNN
+F 3 "" H 9625 1075 50  0000 C CNN
+	1    9625 1075
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR051
+U 1 1 58881CD3
+P 3725 1625
+F 0 "#PWR051" H 3725 1475 50  0001 C CNN
+F 1 "+3.3V" H 3725 1765 50  0000 C CNN
+F 2 "" H 3725 1625 50  0000 C CNN
+F 3 "" H 3725 1625 50  0000 C CNN
+	1    3725 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D3
+U 1 1 5888B31B
+P 10400 5225
+F 0 "D3" H 10350 5350 50  0000 L CNN
+F 1 "Led_Small" H 10225 5125 50  0000 L CNN
+F 2 "LEDs:LED-3MM" V 10400 5225 50  0001 C CNN
+F 3 "" V 10400 5225 50  0000 C CNN
+	1    10400 5225
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
