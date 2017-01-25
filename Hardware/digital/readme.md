@@ -10,7 +10,5 @@ todo
 ![windlogger digital render preview](/Hardware/digital/digital_preview.jpg)
 
 ## Todo list
-- chose the componants
-- update the BOM
-- route the board
 - test
+- documentation...
