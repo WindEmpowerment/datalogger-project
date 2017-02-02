@@ -1,6 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:ftdi
-LIBS:digital-a-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -32,10 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:Hope_RFM
 LIBS:digital
-LIBS:altera
 LIBS:Oscillators
-LIBS:IHE
-LIBS:conn-te
 LIBS:dc-dc
 LIBS:digital-cache
 EELAYER 25 0
@@ -44,8 +40,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
 Title "Windlogger digital"
-Date "2017-01-24"
-Rev "1.0.0"
+Date "2017-02-02"
+Rev "1.0.1"
 Comp "ALEEA"
 Comment1 "LONGUET Gilles"
 Comment2 "AGPL3"
@@ -1065,4 +1061,45 @@ F5 "Uac_lo" I L 5000 6625 60
 $EndSheet
 Wire Wire Line
 	11000 1350 11000 1375
+Text Label 4875 1350 2    60   ~ 0
+D13-SCLK
+$Comp
+L R R13
+U 1 1 5892FF65
+P 5125 1350
+F 0 "R13" V 5205 1350 50  0000 C CNN
+F 1 "270" V 5125 1350 50  0000 C CNN
+F 2 "Discret:R3-LARGE_PADS" V 5055 1350 50  0001 C CNN
+F 3 "" H 5125 1350 50  0000 C CNN
+	1    5125 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Led_Small D12
+U 1 1 58930F4F
+P 5500 1350
+F 0 "D12" H 5450 1475 50  0000 L CNN
+F 1 "Led_Small" H 5325 1250 50  0000 L CNN
+F 2 "LEDs:LED-3MM" V 5500 1350 50  0001 C CNN
+F 3 "" V 5500 1350 50  0000 C CNN
+	1    5500 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 589311BC
+P 5725 1350
+F 0 "#PWR09" H 5725 1100 50  0001 C CNN
+F 1 "GND" H 5725 1200 50  0000 C CNN
+F 2 "" H 5725 1350 50  0000 C CNN
+F 3 "" H 5725 1350 50  0000 C CNN
+	1    5725 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5725 1350 5600 1350
+Wire Wire Line
+	5400 1350 5275 1350
+Wire Wire Line
+	4975 1350 4875 1350
 $EndSCHEMATC
