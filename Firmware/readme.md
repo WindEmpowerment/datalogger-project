@@ -1,4 +1,4 @@
-# FIRMWARE
+# FIRMWARE [Development branch!]
 Here are firmware's files for the windlogger project.
 
 ##windlogger_1

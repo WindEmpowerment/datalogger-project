@@ -13,7 +13,4 @@ All data are timestamped at each measure and can be save on the SD card or trans
 Transmitter like the ESP-01 or ESP-12 wifi module can be use like a serial to wifi converter to send data on the web.
 Transmitter like M590E or A gprs module, with a sim card, can be use like a serial to gprs converter.
 
-###Enclosure
-We have choose the UnioBox66 in 132*120mm format to receive our project, e.g. Enclosure folder.
-
 Work is under development and lot's of function need to be implemented.

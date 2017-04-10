@@ -21,13 +21,12 @@
 #include "../lib/pcf8563.h"
 #include "../lib/sensors.h"
 #include "../lib/config.h"
-#include "../lib/emonLib.h"
-
+//#include "../lib/emonLib.h"
 
 int main()
 {
 	// init port
-	DDRL = 0x00;
+	//DDRL = 0x00;
 
 	/// FSM initialization
 	logger.to_cent = 0;
@@ -36,10 +35,11 @@ int main()
 	logger.second_count = 0;
 	logger.meas_count = 0;
 	logger.millis = 0;
-	logger.node = 3;
+	logger.node = 4;
 	ee_read_logger();
 	measure_clear(&(logger.measureAverage));
 	ptrTime = &time;
+
 
 	// flags init
 	flag_next_state = 0;
@@ -59,12 +59,13 @@ int main()
 	epoch_010116.day=1;
 	epoch_010116.month=1;
 	epoch_010116.year=15;
-	epoch_010116.timestamp=1420070400;
+	//epoch_010116.timestamp=1420070400;
 
 
 
 	//ee_erase_logger();
 
+	timestamp = 0;
 	RTC_init();
 
 	// variable initialisation
@@ -83,17 +84,17 @@ int main()
 	init_FSM();
 
 	sei();
-	uint8_t i=0;
-	for(i=0;i<10;i++)
-	{
-		calcVI(8,900);
-	}
+//	uint8_t i=0;
+//	for(i=0;i<10;i++)
+//	{
+//		calcVI(8,900);
+//	}
 
 
 	while(1)
 	{
 
-		if(logger.to_cent==100)
+		if(logger.to_cent>=100)
 		{
 			flag_new_sec = 1;
 			logger.to_cent = 0;
@@ -139,9 +140,11 @@ int main()
 		if(flag_new_sec==1)
 		{
 			logger.second_count++;
-			//debug_printu("main","sec counter",logger->second_count++,1);
+			//debug_printu("main","sec counter", logger.second_count++,1);
 			if(logger.meas_conf!=0)
 			{
+				//debug_printu("main","meas_stamp", logger.meas_stamp,1);
+
 				if(logger.second_count==logger.meas_stamp)
 				{
 					//USART0_print("new_meas");

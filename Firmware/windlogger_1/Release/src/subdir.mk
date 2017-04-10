@@ -8,7 +8,6 @@ C_SRCS += \
 ../src/config.c \
 ../src/debug.c \
 ../src/eeprom_manage.c \
-../src/emonLib.c \
 ../src/fsm.c \
 ../src/main.c \
 ../src/pcf8563.c \
@@ -22,7 +21,6 @@ OBJS += \
 ./src/config.o \
 ./src/debug.o \
 ./src/eeprom_manage.o \
-./src/emonLib.o \
 ./src/fsm.o \
 ./src/main.o \
 ./src/pcf8563.o \
@@ -36,7 +34,6 @@ C_DEPS += \
 ./src/config.d \
 ./src/debug.d \
 ./src/eeprom_manage.d \
-./src/emonLib.d \
 ./src/fsm.d \
 ./src/main.d \
 ./src/pcf8563.d \
@@ -50,7 +47,7 @@ C_DEPS += \
 src/%.o: ../src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: AVR Compiler'
-	avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega2560 -DF_CPU=16000000UL -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -c -o "$@" "$<"
+	avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega1284p -DF_CPU=16000000UL -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

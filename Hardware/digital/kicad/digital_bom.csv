@@ -1,0 +1,60 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Build Quantity,Datasheet,Family
+1,"Connector, single row, 01x08",CONN_01X08,Analog1 PWM2 Power1,CONN_01X08,Socket_Strip_Straight_1x08,3,9,,
+2,Unpolarized capacitor,C,C1 C4 C5 C6 C9 C12 C18 C19 C21 C22,100n,C_Rect_L7_W2.5_P5,10,30,,
+3,Unpolarized capacitor,C_Small,C13,10n,C_Rect_L7_W2.5_P5,1,3,,
+4,Polarised capacitor,CP,C14 C15 C16 C17,120u,C_Radial_D8_L11.5_P3.5,4,12,,
+5,Unpolarized capacitor,C,C7 C8,12p,C_Rect_L4_W2.5_P2.5,2,6,,
+6,Unpolarized capacitor,C,C2 C3,18p,C_Rect_L4_W2.5_P2.5,2,6,,
+7,Polarised capacitor,CP,C10 C11,1u,C_Radial_D5_L6_P2.5,2,6,,
+8,"Connector, single row, 01x08",CONN_01X08,Communication1,CONN_01X08,Socket_Strip_Straight_1x08,1,3,,
+9,,ZENER,D9,"BZX79-C4V7,113",Diode_DO-35_SOD27_Horizontal_RM10,1,3,,
+10,,Led_Small,D1 D2,Led_Small,LED-3MM,2,6,,
+11,Schottky diode,D_Schottky,D3 D4 D5 D6 D7,SR5100,Diode_DO-27_Horizontal_RM12,5,15,,
+12,Diode,D,D8,SR5100,Diode_DO-27_Horizontal_RM12,1,3,,
+13,"PDIP40, 128k Flash, 16k SRAM, 4k EEPROM, JTAG",ATMEGA1284P-P,IC1,ATMEGA1284P-P,DIP-40_W15.24mm_LongPads,1,3,http://www.atmel.com/Images/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf,
+14,"BNC, female, right angle, panel mount, through hole",CONN-SMA-5-1814400-1,J1,CONN-SMA-5-1814400-1,conn-SMA_TE-5-1814400-1,1,3,,
+15,Micro SD card connector,Micro_SD,J2,Micro_SD,HIROSE-MICROSD-DM3AT-SF,1,3,,Connector
+16,,INDUCTOR_SMALL,L1,47u,inductance_murata_1200LRS,1,3,,
+17,,RFM69CW,Mod2,RFM69CW,RFM69CW,1,3,,
+18,,SIM800L,Mod1,SIM800L,GPRS-SIM80L-smaller,1,3,,
+19,,huzzah,Mod3,huzzah,adafruit-huzzah,1,3,,
+20,"Connector, single row, 01x03",CONN_01X03,P2,CONN_01X03,Pin_Header_Straight_1x03,1,3,,
+21,"Connector, double row, 02x03",CONN_02X03,P3,ISP,Socket_Strip_Straight_2x03,1,3,,
+22,"Connector, single row, 01x06",CONN_01X06,P1,USART0,uart_usb_cp2102_module,1,3,,
+23,"Connector, single row, 01x04",CONN_01X04,POWER_SOURCE1,CONN_01X04,Socket_Strip_Straight_1x04,1,3,,
+24,"Connector, single row, 01x10",CONN_01X10,PWM1,CONN_01X10,Socket_Strip_Straight_1x10,1,3,,
+25,"Transistor P-MOSFET with substrate diode, drain connected to mounting plane (general)",Q_PMOS_GDSD,Q2,NDT2955,SOT-223,1,3,,
+26,Transistor N-MOSFETwith substrate diode (general),Q_NMOS_GSD,Q1,NTR4501N,SOT-23_Handsoldering,1,3,,
+27,Resistor,R,R4 R8 R10 R11,100k,Resistor_Horizontal_RM10mm,4,12,,
+28,Resistor,R,R1 R3,270,Resistor_Horizontal_RM10mm,2,6,,
+29,Resistor,R,R2 R9,470k,Resistor_Horizontal_RM10mm,2,6,,
+30,"Connector, single row, 01x02",CONN_01X02,S1 S2 S3,CONN_SOLDERABLE,CONN_SOLDERABLE,3,9,,
+31,,button-touch-6x6mm,SW1,button-touch-6x6mm,button-touch-6x6mm,1,3,,
+32,Hex Buffer,74HC4050,U1,74HC4050,SOIC-16_3.9x9.9mm_Pitch1.27mm,1,3,,
+33,"12V, 1A Step-Down VR",LM2672M-5.0,U7,LM2672M-5.0,SOIC-8_3.9x4.9mm_Pitch1.27mm,1,3,www.national.com/ds/LM/LM2672.pdf,
+34,Dual Op amp (low power),LM358,U8,LM358,SOIC-8_3.9x4.9mm_Pitch1.27mm,1,3,ns/lm158.pdf,
+35,"MCP1754ST, Fixed 150mA Low Dropout Voltage Regulator, Positive",MCP1754ST-1802E/MB,U6,MCP1700,TO-92_Horizontal1_Inline_Narrow_Oval,1,3,http://ww1.microchip.com/downloads/en/DeviceDoc/20002276C.pdf,
+36,point,TEST_1P,W4,+3.3V,Measurement_Point_Square-TH_Big,1,3,,
+37,point,TEST_1P,W3,+5V,Measurement_Point_Square-TH_Big,1,3,,
+38,point,TEST_1P,W5,+BATT,Measurement_Point_Square-TH_Big,1,3,,
+39,point,TEST_1P,W7,GND,Measurement_Point_Square-TH_Big,1,3,,
+40,point,TEST_1P,W6,GNDPWR,Measurement_Point_Square-TH_Big,1,3,,
+41,point,TEST_1P,W2,USBVCC,Measurement_Point_Square-TH_Big,1,3,,
+42,point,TEST_1P,W1,Vin,Measurement_Point_Square-TH_Big,1,3,,
+43,Two pin crystal,Crystal,X1,16M,Crystal_HC49-U_Vertical,1,3,,
+44,Two pin crystal,Crystal,X2,32.768Hz,Crystal_Round_Horizontal_3mm_BigPad,1,3,,
+
+
+
+
+
+Component Groups:,44
+Component Count:,73
+Fitted Components:,73
+Number of PCBs:,3
+Total components:,219
+Schematic Version:,1.1.0
+Schematic Date:,2017-02-27
+BoM Date:,mar. 07 mars 2017 15:29:06 CET
+Schematic Source:,/home/gilou/Documents/Electronique/windlogger_2016/Hardware/digital/kicad/digital.sch
+KiCad Version:,Eeschema 4.0.5+dfsg1-4~bpo8+1

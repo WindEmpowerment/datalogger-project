@@ -19,7 +19,7 @@
 #include "../lib/pcf8563.h"
 #include "../lib/sensors.h"
 #include "../lib/config.h"
-#include "../lib/emonLib.h"
+//#include "../lib/emonLib.h"
 
 /**
  * function pointer array, use to call the new state
@@ -87,7 +87,6 @@ void state_config(void)
 
 void state_measure(void)
 {
-	char tmp_char[10];
 	if(flag_new_measure==1)	/// Start frequencies measurement, stop with timer0 overflow
 	{
 		// init timers frequencies measurement
@@ -102,9 +101,9 @@ void state_measure(void)
 		 * @todo add x/meas in measure struct
 		 */
 		dir_value(&(logger.measureAverage));
-		temp_value(&(logger.measureAverage));
+		//temp_value(&(logger.measureAverage));
 
-		calcVI(8,900);
+		//calcVI(8,900);
 		//serialprint();
 
 
@@ -147,26 +146,30 @@ void state_measure(void)
 	//exit case
 	if(flag_config_request) logger.next_state = STATE_CONFIG;
 	if(flag_anemo_ok==1) logger.next_state = STATE_MEASURE;
-	if(flag_timestamp==1) logger.next_state = STATE_TIMESTAMP;
+	if(flag_timestamp==1) {
+		logger.next_state = STATE_TIMESTAMP;
+	}
 	else logger.next_state = STATE_SLEEP;
 }
 
 void state_timestamp(void)
 {
 	//program code
-	RTC_get_date(ptrTime);
+	//RTC_get_date(ptrTime);
 
 	flag_timestamp = 0;
 
 	//exit case
-	if(flag_config_request) logger.next_state = STATE_CONFIG;
+	if(flag_config_request) {
+		logger.next_state = STATE_CONFIG;
+	}
 	else logger.next_state = STATE_OUTPUT;
 }
 
 void state_output(void)
 {
 #ifdef DEBUG_MEASURE
-	debug_printl("output","timestamp",ptrTime->timestamp,1);
+	debug_printl("output","timestamp",timestamp,1); // change by global timestamp
 	debug_printd("output", "speed1", logger.measureAverage.speed1,1);
 	debug_printd("output", "speed2", logger.measureAverage.speed2,1);
 	debug_printd("output","degree",logger.measureAverage.degree,1);
@@ -185,13 +188,13 @@ void state_output(void)
 		// écrire sur l'uart0 usart0_print
 		strcpy(output_string,itoa(logger.node,tmp_char,10));	// node number
 		strcat(output_string," ");
-		//strcat(output_string,ltoa(ptrTime->timestamp, tmp_char, 10));	// timestamp
-		//strcat(output_string," ");
+		strcat(output_string,ltoa(timestamp, tmp_char, 10));	// timestamp
+		strcat(output_string," ");
 		strcat(output_string,dtostrf(logger.measureAverage.speed1, 0, 1, tmp_char));	// speed1
 		strcat(output_string," ");
 		strcat(output_string,itoa(logger.measureAverage.degree,tmp_char,10));	// degree
-		strcat(output_string," ");
-		strcat(output_string,dtostrf(logger.measureAverage.temp, 0, 1, tmp_char));	// temperature
+//		strcat(output_string," ");
+//		strcat(output_string,dtostrf(logger.measureAverage.temp, 0, 1, tmp_char));	// temperature
 		strcat(output_string," ");
 		strcat(output_string,dtostrf(logger.measureAverage.apparentPower, 0, 0, tmp_char));
 		strcat(output_string," ");
@@ -204,8 +207,12 @@ void state_output(void)
 		// envoi sur gprs
 
 	//exit case
-	if(flag_config_request) logger.next_state = STATE_CONFIG;
-	else if (flag_new_measure) logger.next_state = STATE_MEASURE;
+	if(flag_config_request) {
+		logger.next_state = STATE_CONFIG;
+	}
+	else if (flag_new_measure){
+		logger.next_state = STATE_MEASURE;
+	}
 	else logger.next_state = STATE_SLEEP;
 }
 
@@ -214,8 +221,12 @@ void state_sleep(void)
 	//program code
 
 	//exit case
-		if(flag_config_request) logger.next_state = STATE_CONFIG;
-		else if (flag_new_measure==1||flag_anemo_ok==1) logger.next_state = STATE_MEASURE;
+		if(flag_config_request) {
+			logger.next_state = STATE_CONFIG;
+		}
+		else if (flag_new_measure==1||flag_anemo_ok==1){
+			logger.next_state = STATE_MEASURE;
+		}
 		else logger.next_state = STATE_SLEEP;
 }
 
@@ -224,7 +235,11 @@ void state_idle(void)
 	//program code
 
 	//exit case
-		if(flag_config_request) logger.next_state = STATE_CONFIG;
-		else if (flag_new_measure) logger.next_state = STATE_MEASURE;
+		if(flag_config_request) {
+			logger.next_state = STATE_CONFIG;
+		}
+		else if (flag_new_measure) {
+			logger.next_state = STATE_MEASURE;
+		}
 		else logger.next_state = STATE_SLEEP;
 }

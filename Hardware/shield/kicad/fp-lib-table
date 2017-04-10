@@ -1,5 +1,3 @@
 (fp_lib_table
-  (lib (name Socket_Arduino_Mega)(type KiCad)(uri "$(KIPRJMOD)/Socket_Arduino_Mega.pretty")(options "")(descr ""))
-  (lib (name w_conn_screw)(type Legacy)(uri /home/gilou/logiciels/kicad_lib/mod/w_conn_screw.mod)(options "")(descr ""))
-  (lib (name windlogger)(type KiCad)(uri "$(KIPRJMOD)/windlogger.pretty")(options "")(descr ""))
+  (lib (name Socket_Arduino_Mega)(type KiCad)(uri /home/gilou/Documents/Electronique/windlogger_2016/shield/kicad/Socket_Arduino_Mega.pretty)(options "")(descr ""))
 )

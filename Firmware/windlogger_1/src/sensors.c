@@ -63,16 +63,16 @@ void anemo_start_count(void)
 {
 	//use interrupt 4 for speed1 measurement
 		logger.measureAverage.count_speed1 = 0;
-		EICRB |= _BV(ISC41); // detect interrupt on INT4 on rising edge
-		EIMSK |= _BV(INT4);	// enable the interrupt on INT4
+		EICRA |= _BV(ISC01); // detect interrupt on INT4 on rising edge
+		EIMSK |= _BV(INT0);	// enable the interrupt on INT4
 
 	// use the timer4 to measure the frequency on TIMER1 and 3. For these timers, the input clock is use.
 	// clear TIMER1 and 3 registers
 	//TCNT5 = 0;
 //	TCNT3 = 0;
-	TCNT4 = 0;
+	TCNT0 = 0;
 
-	TCCR4B |= (1 << CS42) | (1 << CS40);	// CCS4[2:0] use 1024 prescaler  (1 << WGM42) |
+	TCCR0B |= (1 << CS02) | (1 << CS00);	// CCS4[2:0] use 1024 prescaler  (1 << WGM42) |
 	//TCCR5B |=  _BV(CS52) | _BV(CS51) | _BV(CS50); //_BV(ICNC5) | _BV(ICES5) |
 
 //	// synchronise timers
@@ -83,8 +83,8 @@ void anemo_start_count(void)
 	// enable TIMER1, 3 and 4 interrupt
 	//TIMSK5 |= (1 << TOIE5);	// permit input clock counter, if overflow, problem
 //	TIMSK3 |= (1 << TOIE3);	// permit input clock counter, if overflow, problem
-	TIMSK4 |= (1 << TOIE4);	// start to count for TNCT4 time
-	TCNT4_tmp = TCNT4;	// use to filter the frequency in isr
+	TIMSK0 |= (1 << TOIE0);	// start to count for TNCT4 time
+	TCNT0_tmp = TCNT0;	// use to filter the frequency in isr
 
 #ifdef DEBUG_SENSORS
 	RTC_get_date(ptrTime);
@@ -123,23 +123,23 @@ void anemo_read_value(Measure *_measure)
 #endif
 }
 
-ISR(TIMER4_OVF_vect)
+ISR(TIMER0_OVF_vect)
 {
 	//Stop the timers 1, 3 and 0
 //	TIMSK1 &= ~(1 << TOIE1);
 //	TIMSK3 &= ~(1 << TOIE3);
 //	TCCR5B = 0;	// stop input
-	EIMSK = 0;	// disable interrupt INT4
-	TCCR4B = 0;	// CCS4[2:0] use 1024 prescaler  (1 << WGM42) |
+	EIMSK = 0;	// disable interrupt INT0
+	TCCR0B = 0;	// CCS4[2:0] use 1024 prescaler  (1 << WGM42) |
 	flag_anemo_ok=1;
 }
 
-ISR(INT4_vect)
+ISR(INT0_vect)
 {
-	if((TCNT4-TCNT4_tmp)>= 315)
+	if((TCNT0-TCNT0_tmp)>= 315)
 	{
 		logger.measureAverage.count_speed1++;
-		TCNT4_tmp = TCNT4;
+		TCNT0_tmp = TCNT0;
 	}
 
 }
@@ -148,14 +148,15 @@ void dir_value(Measure *_measure)
 {
 	uint32_t degree;
 
-	degree = adc_value(0);
+	degree = adc_value(logger.inPinVane);
 	degree = degree *359/847; 		/**< map the value from 0-847 to 0-359  0,423848878394 = 359/847 to map value to change by degree factor*/
 
 	degree = (degree+logger.degree_offset)%360;
 
 	if(degree>359) degree=359;
 
-	_measure->degree += degree/logger.meas_max; 	/// return the wind degree's value
+	_measure->degree = degree;
+	//_measure->degree += degree/logger.meas_max; 	/// return the wind degree's value
 }
 
 void temp_value(Measure *_measure)
@@ -170,7 +171,7 @@ void temp_value(Measure *_measure)
 
 double inst_AC_voltage()
 {
-	double voltage =(double)adc_value(2);
+	double voltage =(double)adc_value(logger.inPinV);
 	voltage = voltage*5/1024;
 
 	return voltage;
@@ -178,7 +179,7 @@ double inst_AC_voltage()
 
 double inst_AC_current()
 {
-	double current = (double)(adc_value(4))*5/1024;
+	double current = (double)(adc_value(logger.inPinI))*5/1024;
 
 	return current;
 }
@@ -190,7 +191,7 @@ double AC_voltage_offset()
 
 	for(i=0;i<100;i++)
 		{
-		v_offset +=(double)adc_value(2);
+		v_offset +=(double)adc_value(logger.inPinV);
 		}
 	v_offset /= 100;
 	v_offset = v_offset*5/1024;
@@ -205,7 +206,7 @@ double AC_current_offset()
 
 	for(i=0;i<100;i++)
 		{
-		i_offset +=(double)adc_value(4);
+		i_offset +=(double)adc_value(logger.inPinI);
 		}
 	i_offset /=100;
 	i_offset = i_offset*5/1024;

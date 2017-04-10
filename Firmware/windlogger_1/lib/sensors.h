@@ -10,7 +10,7 @@
 #define LIB_SENSORS_H_
 
 //#define DEBUG_SENSORS	/**< use to debug the sensors lib */
-uint16_t TCNT4_tmp;
+uint16_t TCNT0_tmp;
 
 /**
  *	Initialize to 0 each measure variable

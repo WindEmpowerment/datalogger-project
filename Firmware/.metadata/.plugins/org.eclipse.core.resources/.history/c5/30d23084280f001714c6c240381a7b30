@@ -1,0 +1,18 @@
+/*
+ * RTCatmega1284p.cpp
+ *
+ *  Created on: 22 mars 2017
+ *      Author: gilou
+ */
+
+#include "RTCatmega1284p.h"
+
+RTC_atmega1284p::RTC_atmega1284p():second(0),minute(0),hour(0),date(0),month(0),year(0),timestamp(0) {
+	// TODO Auto-generated constructor stub
+
+}
+
+RTC_atmega1284p::~RTC_atmega1284p() {
+	// TODO Auto-generated destructor stub
+}
+

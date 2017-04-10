@@ -1,0 +1,31 @@
+/*
+ * RTCatmega1284p.h
+ *
+ *  Created on: 22 mars 2017
+ *      Author: gilou
+ */
+
+#include <avr/interrupt.h>
+
+#ifndef RTCATMEGA1284P_H_
+#define RTCATMEGA1284P_H_
+
+class RTC_atmega1284p {
+public:
+	RTC_atmega1284p();
+	virtual ~RTC_atmega1284p();
+
+	void init();	// this method initialize the timer2 to work as Real Time Clock with an external crystal
+	void ISR(TIMER2_OVF_vect);
+private:
+	unsigned char second;
+	unsigned char minute;
+	unsigned char hour;
+	unsigned char date;
+	unsigned char month;
+	unsigned char year;
+	double timestamp;
+
+};
+
+#endif /* RTCATMEGA1284P_H_ */

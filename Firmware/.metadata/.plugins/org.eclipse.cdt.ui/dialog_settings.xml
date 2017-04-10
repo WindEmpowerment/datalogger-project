@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Default C++ source template" key="LastUsedSourceTemplate"/>
+	<item value="Default C++ header template" key="LastUsedHeaderTemplate"/>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item value="168" key="size.height"/>
+		<item value="378" key="size.width"/>
+	</section>
+	<section name="PDOMSearchPage">
+		<item value="false" key="caseSensitive"/>
+		<item value="227191" key="searchFlags"/>
+		<list key="previousPatterns">
+			<item value="flag_error"/>
+			<item value="flag_"/>
+			<item value="flag_USART0_read"/>
+			<item value="inPinVane"/>
+			<item value="new_meas"/>
+			<item value="TIMSK3"/>
+			<item value="rtc"/>
+		</list>
+	</section>
+	<section name="NewClassWizardPage">
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+</section>

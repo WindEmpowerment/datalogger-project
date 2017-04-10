@@ -14,6 +14,7 @@
 #include "../lib/pcf8563.h"
 #include "../lib/twi.h"
 #include "../lib/debug.h"
+#include <avr/interrupt.h>
 
 
 // déclaration du tableau où l'on récupère les registres du pcf8563
@@ -59,8 +60,8 @@ void debug_RTC_timestamp_calc(Time *start,Time *stop,unsigned char leapY, double
 	debug_print("_______________","_______________",1);
 
 	debug_printl("|timestamp result",":",result_timesamp,1);
-	debug_printl("|epoch timestamp",":",epoch_010116.timestamp,1);
-	debug_printl("|writed timestamp",":",stop->timestamp,1);
+	//debug_printl("|epoch timestamp",":",epoch_010116.timestamp,1);
+	///debug_printl("|writed timestamp",":",stop->timestamp,1);
 	debug_print("_______________","_______________",0);
 	debug_print("_______________","_______________",0);
 	debug_print("_______________","_______________",1);
@@ -76,9 +77,17 @@ uint8_t RTC_init()
 #ifdef DEBUG_RTC
 	debug_print("wake-up:","init RTC",1);
 #endif
-	return TWI_init();
+	//return TWI_init();
+	//change for internal rtc on timer2
+	TIMSK2 |= _BV(TOIE2);				// enable overflow interrupt
+	TCNT2 = 0;
+	TCCR2B = _BV(CS22) | _BV(CS20); // prescaler for overload interrupt each 1 second : CS2[2:0]=101;
+	ASSR |=  _BV(AS2);					// Set the bit AS2 in the ASSR register to clock the timer 2 from the external crystal
 
-
+	return 1;
+}
+ISR(TIMER2_OVF_vect){
+	timestamp++;
 }
 
 /*
@@ -209,7 +218,7 @@ uint8_t RTC_get_date(Time *time)
 		time->year = (temp_diz_unit*10 + temp_unit);
 
 		//time->timestamp = ptrepoch_010116->timestamp;
-		time->timestamp = rtc_time_to_epoch(ptrepoch_010116, time)+ ptrepoch_010116->timestamp;
+		//time->timestamp = rtc_time_to_epoch(ptrepoch_010116, time)+ ptrepoch_010116->timestamp;
 
 #ifdef DEBUG_RTC
 		debug_RTC_print_Time(time);

@@ -1,5 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 4050
+D Hex Buffer
+K CMOS BUFFER
+$ENDCMP
+#
+$CMP 74HC4050
+D Hex Buffer
+K CMOS BUFFER
+$ENDCMP
+#
 $CMP CONN-SMA-5-1814400-1
 D BNC, female, right angle, panel mount, through hole
 $ENDCMP
@@ -39,6 +49,11 @@ $ENDCMP
 $CMP Micro_SD
 D Micro SD card connector
 K SD
+$ENDCMP
+#
+$CMP USB_OTG
+D micro/mini connector
+K USB USB_OTG USB_mini USB_micro
 $ENDCMP
 #
 #End Doc Library

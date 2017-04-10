@@ -1,0 +1,27 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 6 mars 2017
+ *      Author: gilou
+ */
+
+#include <avr/io.h>
+#include <util/delay.h>
+
+
+int main(){
+	DDRB = 0xFF;
+	PORTB = 0xF0;
+
+	while(1){
+		PORTB = 0xF0;
+		_delay_ms(200);
+		PORTB = 0x00;
+		_delay_ms(200);
+
+
+	}
+
+
+	return 0;
+}

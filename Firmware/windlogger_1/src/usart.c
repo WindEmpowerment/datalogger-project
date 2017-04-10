@@ -81,10 +81,12 @@ void USART0_print_conf(){
 	USART0_print("$20=");USART0_print(dtostrf(logger.anemo1_factor,0,3,conv_string));USART0_print("	anemo1 factor\r\n");
 	USART0_print("$21=");USART0_print(dtostrf(logger.anemo1_offset,0,3,conv_string));USART0_print("	anemo1 offset\r\n");
 	USART0_print("$22=");USART0_print(itoa(logger.degree_offset,conv_string,10));USART0_print("	degree offset must between 0 and 359\r\n");
+	USART0_print("$23=");USART0_print(itoa(logger.inPinVane,conv_string,10));USART0_print("	vane pin\r\n");
 	USART0_print("AC wattmeter\r\n");
-	USART0_print("$30=");USART0_print(itoa(logger.inPinV,conv_string,10));USART0_print("	Ac voltage pin, in normaly mode is 2 for adc2\r\n");
-	USART0_print("$31=");USART0_print(itoa(logger.inPinI,conv_string,10));USART0_print("	Ac current pin, in normaly mode is 4 for adc4\r\n");
+	USART0_print("$30=");USART0_print(itoa(logger.inPinV,conv_string,10));USART0_print("	Ac voltage pin\r\n");
+	USART0_print("$31=");USART0_print(itoa(logger.inPinI,conv_string,10));USART0_print("	Ac current pin\r\n");
 	USART0_print("$32=");USART0_print(dtostrf(logger.VCAL,0,3,conv_string));USART0_print("	AC voltage coefficient,  calib step1\r\n");
 	USART0_print("$33=");USART0_print(dtostrf(logger.ICAL,0,3,conv_string));USART0_print("	AC current coefficient,  calib step2\r\n");
 	USART0_print("$34=");USART0_print(dtostrf(logger.PHASECAL,0,3,conv_string));USART0_print("	phase calibration between 0 and 2, near 1, calib step3\r\n");
 }
+

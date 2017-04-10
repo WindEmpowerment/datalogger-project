@@ -12,12 +12,13 @@
 #define LIB_MAIN_H_
 
 #include <avr/io.h>
+#include <inttypes.h>
 
 //#define DEBUG	/**< DEBUG keyword used to enter in verbose mode on the USART0, uncomment to verbose mode, comment to normal mode**/
 
-#define BR_9600		207
-#define BR_57600	34	/**< UBBRn registers value to work at 57600 baud**/
-#define BR_115200	16	/**< UBBRn registers value to work at 115200 baud**/
+#define BR_9600 207;
+#define BR_57600 34;	/**< UBBRn registers value to work at 57600 baud**/
+#define BR_115200 16;	/**< UBBRn registers value to work at 115200 baud**/
 
 //variables
 uint16_t usart0_baudrate;	/**< Variable to choose the baud rate speed, use the BR_57600 or BR_115200 macros */
@@ -37,6 +38,8 @@ uint8_t flag_timestamp;
 uint8_t flag_error;
 uint8_t flag_pass_first_measure;
 
+uint32_t timestamp;		//!< Contain date/time in epoch format
+
 /**
  * @brief The Time structure save date and time value
  */
@@ -49,7 +52,7 @@ typedef struct Time
 	unsigned char day;		//!< Contain day number from the last month
 	unsigned char month;	//!< Contain month number from the last year
 	unsigned char year;		//!< Contain year's counter
-	uint32_t timestamp;		//!< Contain date/time in epoch format
+
 } Time;
 Time time, *ptrTime;
 
@@ -86,7 +89,9 @@ typedef struct Logger
 	uint8_t		meas_count;		/**< To count the number of measure */
 	uint8_t		meas_max;		/**< the number of measure for the average */
 	uint8_t		meas_stamp;		/**< Period between two measure cycle */
+
 	Measure		measureAverage;	/**< were all measures average are stored */
+
 	double		anemo1_factor;
 	double		anemo1_offset;
 	double		anemo2_factor;
@@ -99,6 +104,7 @@ typedef struct Logger
 	double		ac_current_offset;
 	unsigned int inPinV;//Set AC Voltage pin
 	unsigned int inPinI;// set ac current pin
+	unsigned int inPinVane;// set vane current pin
 	//Calibration coefficients
 	//These need to be set in order to obtain accurate results
 	double 		VCAL;

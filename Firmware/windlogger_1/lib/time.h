@@ -11,9 +11,9 @@
 
 void init_FSM();
 
-void init_millis();
+//void init_millis();
 
-void stop_millis();
+//void stop_millis();
 
 
 #endif /* LIB_TIME_H_ */
