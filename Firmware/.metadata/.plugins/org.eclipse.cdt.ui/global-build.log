@@ -1,14 +1,9 @@
-18:36:03 **** Incremental Build of configuration Release for project windlogger_1 ****
+05:30:09 **** Build of configuration Release for project windlogger_1 ****
 make all 
-Building file: ../src/fsm.c
+Building file: ../src/config.c
 Invoking: AVR Compiler
-avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega1284p -DF_CPU=16000000UL -MMD -MP -MF"src/fsm.d" -MT"src/fsm.d" -c -o "src/fsm.o" "../src/fsm.c"
-Finished building: ../src/fsm.c
- 
-Building file: ../src/main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega1284p -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega1284p -DF_CPU=16000000UL -MMD -MP -MF"src/config.d" -MT"src/config.d" -c -o "src/config.o" "../src/config.c"
+Finished building: ../src/config.c
  
 Building target: windlogger_1.elf
 Invoking: AVR C Linker
