@@ -67,7 +67,7 @@ void state_config(void)
 {
 	if(strcmp(config_request,"$$")==0)
 	{
-		USART0_print_conf();
+		USART0_print_conf();			// convert to print
 	}
 	else if (config_request[0]=='$' && config_request[3]=='=')
 	{

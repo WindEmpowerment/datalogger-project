@@ -1,1 +1,1 @@
-src/adc.d: ../src/adc.c
+src/adc.o: ../src/adc.c
