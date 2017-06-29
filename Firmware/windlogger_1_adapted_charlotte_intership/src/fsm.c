@@ -11,14 +11,19 @@
 #include <string.h>
 #include <stdlib.h>
 #include <util/delay.h>
+#include <avr/interrupt.h>
 
 #include "../lib/main.h"
+#include "../lib/time.h"
 #include "../lib/fsm.h"
 #include "../lib/usart.h"
 #include "../lib/debug.h"
 #include "../lib/pcf8563.h"
 #include "../lib/sensors.h"
 #include "../lib/config.h"
+#include "../lib/fct_SDCard.h"
+#include "../lib/fct_spi.h"
+#include "../lib/FAT32.h"
 //#include "../lib/emonLib.h"
 
 /**
@@ -68,6 +73,8 @@ void state_config(void)
 	if(strcmp(config_request,"$$")==0)
 	{
 		USART0_print_conf();
+
+
 	}
 	else if (config_request[0]=='$' && config_request[3]=='=')
 	{
@@ -100,13 +107,7 @@ void state_measure(void)
 		 * @todo if en, measure dir, PowerAC, PowerDC, temp, RPM
 		 * @todo add x/meas in measure struct
 		 */
-		//dir_value(&(logger.measureAverage));
-		//temp_value(&(logger.measureAverage));
-
-		//calcVI(8,900);
-		//serialprint();
-
-
+		dir_value(&(logger.measureAverage));
 		flag_new_measure = 0;
 
 #ifdef DEBUG_MEASURE
@@ -122,7 +123,6 @@ void state_measure(void)
 	{
 		flag_anemo_ok=0;
 		anemo_read_value(&(logger.measureAverage));
-
 		logger.meas_count++;
 		if(logger.meas_count == logger.meas_max)
 		{
@@ -134,7 +134,7 @@ void state_measure(void)
 				//skip the fisrt burst of data and wait the next
 			//}
 			//else flag_timestamp = 1;			// go to timestamp and output
-				flag_timestamp = 1;			// go to timestamp and output
+			flag_timestamp = 1;			// go to timestamp and output
 		}
 
 #ifdef DEBUG_MEASURE
@@ -171,38 +171,59 @@ void state_output(void)
 #ifdef DEBUG_MEASURE
 	debug_printl("output","timestamp",timestamp,1); // change by global timestamp
 	debug_printd("output", "speed1", logger.measureAverage.speed1,1);
-/*	debug_printd("output", "speed2", logger.measureAverage.speed2,1);
+	//debug_printd("output", "speed2", logger.measureAverage.speed2,1);
 	debug_printd("output","degree",logger.measureAverage.degree,1);
-	debug_printd("output","temp",logger.measureAverage.temp,1);*/
+	//debug_printd("output","temp",logger.measureAverage.temp,1);*/
 #endif
 	char tmp_char[12];
 
 	// output_config    => outputs configuration register
-		// if == 0 no output
-		// if == 1 only on uart0
-		// if == 2 uart0 + sd card
-		// if ==3 uart0 + gprs
-
 	// formatting the output string ( for example timestamp data1 data2\r\n")
-		char output_string[50];
 		// écrire sur l'uart0 usart0_print
-		strcpy(output_string,itoa(logger.node,tmp_char,10));	// node number
-		strcat(output_string," ");
-		strcat(output_string,ltoa(timestamp, tmp_char, 10));	// timestamp
-		strcat(output_string," ");
-		strcat(output_string,dtostrf(logger.measureAverage.speed1, 0, 1, tmp_char));	// speed1
-		strcat(output_string," ");
-		strcat(output_string,itoa(logger.measureAverage.degree,tmp_char,10));	// degree
-//		strcat(output_string," ");
-//		strcat(output_string,dtostrf(logger.measureAverage.temp, 0, 1, tmp_char));	// temperature
-		//(output_string," ");
-		//strcat(output_string,dtostrf(logger.measureAverage.apparentPower, 0, 0, tmp_char));
-		//strcat(output_string," ");
-		//strcat(output_string,dtostrf(logger.measureAverage.realPower, 0, 0, tmp_char));// realpower
-		strcat(output_string,"\r\n");														// close the string
+		strcpy(dataString,itoa(logger.node,tmp_char,10));	// node number
+		strcat(dataString," ");
+		strcat(dataString,ltoa(timestamp, tmp_char, 10));	// timestamp
+		strcat(dataString," ");
+		strcat(dataString,dtostrf(logger.measureAverage.speed1, 0, 1, tmp_char));	// speed1
+		strcat(dataString,"m/s  ");
+		strcat(dataString,itoa(logger.measureAverage.degree,tmp_char,10));	// degree
+		strcat(dataString,"degrees ");
+		strcat(dataString,"\r\n");														// close the string
 
-		USART0_print(output_string);
+		USART0_print(dataString);
 		// write on the sd card
+		if	((PORTC & 0x08)==0x00){						/**si PG2 = 0 => la carte SD est dans le lécteur*/
+					if(flag_reinit == 0){								/** envoyer un init de la carte si elle est remise dans le lécteur*/
+						//SDCard init
+						SD_init();
+						// OUVERTURE DE LA PARTITION
+						getBootSectorData();				/** envoyer cette fonction pour l'identification du péripherique ( a faire toujours apres l'init de SD)*/
+						init_FSM();
+						sei();
+						flag_reinit = 1;								/** set flag_reinit*/
+					}
+				char j=0;
+
+					strcpy(logger.tmp_filename, logger.filename) ;		/**copier le nom de fichier dans le registre temporaire*/
+
+					j = readFile(VERIFY, logger.tmp_filename);				/**vérifier si le fichier éxiste*/
+
+					strcpy(logger.tmp_filename, logger.filename) ;		/**copier le nom de fichier dans le registre temporaire*/
+
+					if(j==0){													/**si le fichier n'éxiste pas*/
+						strcpy(dataString, "timestamp,speed1,degree\n") ; /**init datastring avec cette chaine de caractére*/
+						writeFile(logger.tmp_filename);													/** construire le fichier avec l'entête au début*/
+															/** recopier les donner pr les envoyé*/
+					}
+
+					strcpy(logger.tmp_filename, logger.filename) ;		/**copier le nom de fichier dans le registre temporaire*/
+					writeFile(logger.tmp_filename);
+				}
+				else {															/**si PG2 = 1 => la carte SD est hors lécteur*/
+
+						USART0_print("\rpas de carte sd, insérez une dans le lécteur\n\r");
+						flag_reinit = 0;										/**rénitialiser i a la sortie de cette boucle pour lancé l'init si PG2 change*/
+					}
 
 		// send on gprs
 

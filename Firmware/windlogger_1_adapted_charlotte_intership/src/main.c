@@ -21,13 +21,17 @@
 #include "../lib/pcf8563.h"
 #include "../lib/sensors.h"
 #include "../lib/config.h"
+#include "../lib/FAT32.h"
+#include "../lib/fct_SDCard.h"
+#include "../lib/fct_spi.h"
 //#include "../lib/emonLib.h"
 
 int main()
 {
 	// init port
 	//DDRL = 0x00;
-
+	DDRB = 0xB8;
+	DDRC = 0;
 	/// FSM initialization
 	logger.to_cent = 0;
 	logger.old_state = STATE_IDLE;
@@ -36,6 +40,7 @@ int main()
 	logger.meas_count = 0;
 	logger.millis = 0;
 	logger.node = 4;
+
 	ee_read_logger();
 	measure_clear(&(logger.measureAverage));
 	ptrTime = &time;
@@ -72,6 +77,8 @@ int main()
 	data_udr0 = 0;
 	flag_USART0_read = 0;
 	config_request_i = 0;
+	cardType=0;
+	k=0;
 
 	/// Choose USART0 baud rate (BR_57600 or BR_115200)
 	usart0_baudrate = BR_9600;
@@ -90,6 +97,11 @@ int main()
 //		calcVI(8,900);
 //	}
 
+	// PREPARATION NOM DE FICHIER CARTE SD
+		ptrTime->month = 12;										/**init mois*/
+		ptrTime->year = 16;											/**init année*/
+		build_filename();											/**construire le nom de fichier dans le registre forme_filename*/
+		strcpy(logger.filename, logger.forme_filename);		/** copier forme_filename dans filename*/
 
 	while(1)
 	{

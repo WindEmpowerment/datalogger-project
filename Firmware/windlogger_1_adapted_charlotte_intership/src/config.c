@@ -91,51 +91,6 @@ void config_update(char *_config_request)
 		if(arg_uc>=16 &&arg_uc<99)	RTC_update_reg(YEAR,arg_uc);
 		else USART0_print("must be: 16=<year<99");
 		break;
-	case 20:
-		logger.anemo1_factor = arg_f;
-		ee_write_logger();
-		break;
-	case 21:
-		logger.anemo1_offset = arg_f;
-		ee_write_logger();
-		break;
-	case 22:
-		logger.degree_offset = arg_uc;
-		ee_write_logger();
-		break;
-	case 23:// set vane pin
-		if(arg_uc>=0 && arg_uc<8)
-		{
-			logger.inPinVane = arg_uc;
-			ee_write_logger();
-		}
-		break;
-	/*case 30://Set AC Voltage pin
-		if(arg_uc>=0 && arg_uc<8)
-		{
-			logger.inPinV = arg_uc;
-			ee_write_logger();
-		}
-		break;
-	case 31:// set ac current pin
-		if(arg_uc>=0 && arg_uc<8)
-		{
-			logger.inPinI = arg_uc;
-			ee_write_logger();
-		}
-		break;
-	case 32:
-		logger.VCAL = arg_f;
-		ee_write_logger();
-		break;
-	case 33:
-		logger.ICAL = arg_f;
-		ee_write_logger();
-		break;
-	case 34:
-		logger.PHASECAL = arg_f;
-		ee_write_logger();
-		break;*/
 	default:
 		USART0_print("Bad request !\r\n");
 		break;

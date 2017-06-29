@@ -66,7 +66,7 @@ void USART0_print_conf(){
 
 	USART0_print("Configuration :\r\n");
 	USART0_print("Logger :\r\n");
-	USART0_print("$00=");USART0_print(itoa(logger.meas_conf,conv_string,10));USART0_print("	0: not measure,1: 10s average,2:1min average,3:10min average.\r\n");
+	USART0_print("$00=");USART0_print(itoa(logger.meas_conf,conv_string,10));USART0_print("	0: not measure,1: 1s average,2:1min average,3:10min average.\r\n");
 	USART0_print("Time :\r\n");
 	USART0_print("$11=");USART0_print(itoa(ptrTime->secs,conv_string,10));USART0_print("	seconds\r\n");
 	USART0_print("$12=");USART0_print(itoa(ptrTime->mins,conv_string,10));USART0_print("	minutes\r\n");
@@ -75,16 +75,19 @@ void USART0_print_conf(){
 	USART0_print("$15=");USART0_print(itoa(ptrTime->day,conv_string,10));USART0_print("	month day\r\n");
 	USART0_print("$16=");USART0_print(itoa(ptrTime->month,conv_string,10));USART0_print("	year month\r\n");
 	USART0_print("$17=");USART0_print(itoa(ptrTime->year,conv_string,10));USART0_print("	year (16 - 99)\r\n");
-	USART0_print("Sensors :\r\n");
-	USART0_print("$20=");USART0_print(dtostrf(logger.anemo1_factor,0,3,conv_string));USART0_print("	anemo1 factor\r\n");
-	USART0_print("$21=");USART0_print(dtostrf(logger.anemo1_offset,0,3,conv_string));USART0_print("	anemo1 offset\r\n");
-	USART0_print("$22=");USART0_print(itoa(logger.degree_offset,conv_string,10));USART0_print("	degree offset must between 0 and 359\r\n");
-	USART0_print("$23=");USART0_print(itoa(logger.inPinVane,conv_string,10));USART0_print("	vane pin\r\n");
-	/*USART0_print("AC wattmeter\r\n");
-	USART0_print("$30=");USART0_print(itoa(logger.inPinV,conv_string,10));USART0_print("	Ac voltage pin\r\n");
-	USART0_print("$31=");USART0_print(itoa(logger.inPinI,conv_string,10));USART0_print("	Ac current pin\r\n");
-	USART0_print("$32=");USART0_print(dtostrf(logger.VCAL,0,3,conv_string));USART0_print("	AC voltage coefficient,  calib step1\r\n");
-	USART0_print("$33=");USART0_print(dtostrf(logger.ICAL,0,3,conv_string));USART0_print("	AC current coefficient,  calib step2\r\n");
-	USART0_print("$34=");USART0_print(dtostrf(logger.PHASECAL,0,3,conv_string));USART0_print("	phase calibration between 0 and 2, near 1, calib step3\r\n");*/
+
 }
+
+void build_filename(){
+
+	char temp_conv[20];				/**converting register*/
+
+	 	strcpy(logger.forme_filename,dtostrf(ptrTime->month,0,0,temp_conv));		/**copy la valeur month de la structure Time, qui est convertie en chaine de caractére, dans le registre forme_filename de la structure Logger*/
+	 	strcat(logger.forme_filename,"_") ;											/**concatener la chaine de caractére de forme_filename avec "_"*/
+	 	strcat(logger.forme_filename, dtostrf(ptrTime->year,0,0,temp_conv)) ;		/**copier la valeur year de la structure Time, qui est convertie en chaine de caractére, dans le registre forme_filename de la structure Logger*/
+	 	strcat(logger.forme_filename,".csv") ;										/**concatener la chaine de caractére de forme_filename avec ".csv"*/
+
+}
+
+
 
